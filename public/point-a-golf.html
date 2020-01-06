@@ -258,9 +258,13 @@
           </div>
         </div>
         <div class="text-white text-center font-600 text-lg">
-          &copy; Susie Meyers Golf 2019
+          &copy; Susie Meyers Golf <span id="year"></span>
         </div>
       </div>
     </footer>
   </body>
+
+  <script>
+    document.getElementById("year").innerHTML = new Date().getFullYear();
+  </script>
 </html>
