@@ -8,20 +8,13 @@
     <link rel="stylesheet" href="css/tailwind.css" />
   </head>
   <body class="">
-    <header class="w-full flex flex-col min-h-screen">
+    <header class="w-full flex flex-col min-h-screen bg-cover bg-top" style="background-image: url('assets/img/susie-meyers-putting-lesson.jpg')">
       <nav class="z-50">
         <div class="h-16 bg-white flex items-center px-4 shadow">
           <div class="w-1/3">
-            <button
-              class="uppercase font-600 text-primary-red-500 leading-none"
-            >
+            <button class="uppercase font-600 text-primary-red-500 leading-none">
               <div class="text-primary-red-500 font-600 pr-2 flex items-center">
-                <svg
-                  xmlns="http://www.w3.org/2000/svg"
-                  width="20"
-                  height="12"
-                  class="fill-currentmr-2"
-                >
+                <svg xmlns="http://www.w3.org/2000/svg" width="20" height="12" class="fill-current mr-2">
                   <g fill="none" stroke="#9d201a" stroke-width="2">
                     <path data-name="Line 1" d="M0 1h20" />
                     <path data-name="Line 2" d="M0 6h20" />
@@ -33,81 +26,68 @@
             </button>
           </div>
           <div class="w-1/3 flex justify-center">
-            <img
-              src="assets/img/logos/susie-meyers-golf-logo.png"
-              class="w-24 h-24 mt-16"
-            />
+            <img src="assets/img/logos/susie-meyers-golf-logo.png" class="w-24 h-24 mt-16" />
           </div>
           <div class="w-1/3 flex justify-end">
-            <a
-              href="/lessons"
-              class="uppercase font-500 text-primary-red-500 font-600 leading-none"
-            >
+            <a href="/lessons" class="uppercase font-500 text-primary-red-500 font-600 leading-none">
               LESSONS
             </a>
           </div>
         </div>
       </nav>
-      <div
-        class="bg-cover bg-top flex-grow"
-        style="background-image: url('assets/img/susie-meyers-putting-lesson.jpg');"
-      ></div>
-      <div class="bg-gray-800 p-4 pt-8">
-        <h1 class="text-white text-3xl font-200 leading-tight">
-          Susie Meyers <br />
-          <span class="font-600">PGA Golf Instructor</span>
-        </h1>
-      </div>
+
+      <div class="flex-grow"></div>
+
+      <section class="bg-gray-800 px-4 py-8 flex flex-wrap items-center shadow">
+        <div class="bg-gray-800 w-full md:w-1/2">
+          <h1 class="text-white text-3xl font-200 leading-tight flex flex-wrap items-end">
+            <span class="w-full">Susie Meyers</span>
+            <span class="w-full font-600 text-sm uppercase mt-1 text-primary-red-600">PGA Golf Instructor</span>
+          </h1>
+          <p class="text-white text-lg font-200 leading-tight pt-2">
+            Golf Digest Top 100 professional golf instructor based in Tucson, AZ.
+          </p>
+        </div>
+        <div class="flex flex-wrap -mx-4 mt-4 w-full md:w-1/2 md:mt-2 md:justify-end">
+          <div class="w-auto px-4">
+            <button
+              class="bg-primary-red-500 border-2 border-primary-red-500 rounded-xl shadow-lg text-white px-4 py-2 hover:bg-primary-red-700 hover:border-primary-red-700 focus:outline-none font-500"
+            >
+              <a href="/lessons">Book A Lesson</a>
+            </button>
+          </div>
+          <div class="w-auto">
+            <button
+              class="bg-transparent border-2 border-white rounded-xl shadow-lg text-white px-4 py-2 hover:bg-white hover:text-gray-700 focus:outline-none font-500"
+            >
+              <a href="/point-a-golf-book">Buy the Book</a>
+            </button>
+          </div>
+        </div>
+      </section>
     </header>
-    <section class="bg-gray-800 px-4 pb-16 ">
-      <div class="">
-        <p class="text-white text-lg font-200 leading-tight">
-          Golf Digest Top 100 professional golf instructor based in Tucson, AZ.
-        </p>
-      </div>
-      <div class="flex flex-wrap -mx-4 mt-4">
-        <div class="w-auto px-4">
-          <button
-            class="bg-primary-red-500 border-2 border-primary-red-500 rounded-xl shadow-lg text-white px-4 py-2 hover:bg-primary-red-700 hover:border-primary-red-700 focus:outline-none font-500"
-          >
-            <a href="/lessons">Book A Lesson</a>
-          </button>
-        </div>
-        <div class="w-auto">
-          <button
-            class="bg-transparent border-2 border-white rounded-xl shadow-lg text-white px-4 py-2 hover:bg-white hover:text-gray-700 focus:outline-none font-500"
-          >
-            <a href="/point-a-golf-book">Buy the Book</a>
-          </button>
-        </div>
-      </div>
-    </section>
-    <section class="mt-16 bg-white">
-      <div class="px-4">
+
+    <section class="mt-16 lg:mt-0 bg-white flex flex-wrap">
+      <div class="px-4 w-full lg:mt-16 lg:w-2/3 lg:order-2">
         <p class="font-200 text-lg">
-          My approach to spending time with a student is based upon the
-          philosophies of Point A Golf. It is flexible instruction geared to the
-          differences found in every student’s style. Over the years my clients
-          have included a large volume of men, women and juniors, state
-          champions, PGA Tour winners, LPGA players, recreational players and
-          beginners. Many golfers have said they find it to be a very unique and
-          insightful time. This view is built upon my years of competitive golf
-          and 30 years of coaching. My mission is to provide and support a
-          positive learning experience.
+          My approach to spending time with a student is based upon the philosophies of Point A Golf. It is flexible instruction geared to the differences found
+          in every student’s style. Over the years my clients have included a large volume of men, women and juniors, state champions, PGA Tour winners, LPGA
+          players, recreational players and beginners. Many golfers have said they find it to be a very unique and insightful time. This view is built upon my
+          years of competitive golf and 30 years of coaching. My mission is to provide and support a positive learning experience.
         </p>
-      </div>
-      <div class="px-4 mt-8">
-        <div class="bg-primary-red-500 h-2 w-16 mt-4"></div>
-        <p class="mt-3">
-          I have been a member of The PGA of America since 1994, competed on the
-          LPGA Tour, played in 4 US Opens and one LPGA Championship.
-        </p>
+        <div class="mt-8">
+          <div class="bg-primary-red-500 h-1 w-10 mt-4"></div>
+          <p class="mt-3 text-sm leading-tight">
+            I have been a member of The PGA of America since 1994, competed on the LPGA Tour, played in 4 US Opens and one LPGA Championship.
+          </p>
+        </div>
       </div>
       <div
-        class="w-full h-120 bg-bottom bg-cover bg-no-repeat mt-16"
+        class="w-full h-120 bg-bottom bg-cover bg-no-repeat mt-16 lg:mt-0 lg:w-1/3 lg:order-1"
         style="background-image: url('assets/img/susie-meyers-driving-range.jpg');"
       ></div>
     </section>
+
     <section>
       <div class="bg-gray-800 p-4 py-16 shadow-lg">
         <div class="flex items-center justify-center">
@@ -123,9 +103,7 @@
       <div class="-mt-24">
         <div class="px-4 mt-16 ">
           <!-- Add v-for in here -->
-          <div
-            class="px-4 pb-8 w-full text-centerflex items-center justify-center"
-          >
+          <div class="px-4 pb-8 w-full text-centerflex items-center justify-center">
             <div class="p-4 bg-white shadow-lg text-center">
               <h3 class="uppercase text-gray-500 font-400 leading-tight">
                 meta
@@ -139,9 +117,7 @@
       </div>
     </section>
     <section class="mt-16">
-      <h2
-        class="text-primary-red-600 text-3xl font-200 text-center leading-tight"
-      >
+      <h2 class="text-primary-red-600 text-3xl font-200 text-center leading-tight">
         Feedback and <br />
         <span class="font-600">Testimonials</span>
       </h2>
@@ -150,15 +126,10 @@
           <!-- v-for in here -->
           <div class="">
             <p class="leading-normal font-400 px-10 text-center text-gray-900">
-              Point A is more than just a way to play golf it is a way life. I
-              have not only improved my golf game but I have found much more
-              clarity and joy on and off the course using the tools that Point A
-              offers.
+              Point A is more than just a way to play golf it is a way life. I have not only improved my golf game but I have found much more clarity and joy on
+              and off the course using the tools that Point A offers.
             </p>
-            <span
-              class="mt-4 font-600 text-black text-sm leading-tight text-center block"
-              >Brittany</span
-            >
+            <span class="mt-4 font-600 text-black text-sm leading-tight text-center block">Brittany</span>
           </div>
           <div class="mt-8 flex items-center justify-center">
             <div class="flex">
@@ -172,9 +143,7 @@
     </section>
     <section class="mt-16">
       <div class="bg-gray-200 shadow-lg py-16 pb-32">
-        <h2
-          class="text-primary-red-600 text-3xl font-200 text-center leading-tight"
-        >
+        <h2 class="text-primary-red-600 text-3xl font-200 text-center leading-tight">
           Latest Posts From <br />
           <span class="font-600">Instagram</span>
         </h2>
@@ -187,11 +156,7 @@
               <div class="p-4">
                 <div class="flex items-center">
                   <div>
-                    <svg
-                      xmlns="http://www.w3.org/2000/svg"
-                      width="18"
-                      height="18"
-                    >
+                    <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18">
                       <path
                         d="M8.988 18l-.247-.13c-.267-.14-6.549-3.5-8.378-9.113C-.709 5.464.673 1.732 3.445.442a4.863 4.863 0 015.56 1.126 4.862 4.862 0 015.563-1.11c2.768 1.3 4.143 5.038 3.064 8.328-1.84 5.611-8.129 8.949-8.4 9.089zM5.438 1.192a3.62 3.62 0 00-1.543.35C1.651 2.59.543 5.649 1.426 8.361c1.481 4.548 6.4 7.617 7.563 8.289 1.164-.669 6.091-3.722 7.581-8.267.888-2.71-.213-5.772-2.455-6.826a3.852 3.852 0 00-4.68 1.274L9 3.379l-.43-.55a4.021 4.021 0 00-3.132-1.637z"
                         fill="#9d201a"
@@ -216,11 +181,7 @@
               <div class="p-4">
                 <div class="flex items-center">
                   <div>
-                    <svg
-                      xmlns="http://www.w3.org/2000/svg"
-                      width="18"
-                      height="18"
-                    >
+                    <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18">
                       <path
                         d="M8.988 18l-.247-.13c-.267-.14-6.549-3.5-8.378-9.113C-.709 5.464.673 1.732 3.445.442a4.863 4.863 0 015.56 1.126 4.862 4.862 0 015.563-1.11c2.768 1.3 4.143 5.038 3.064 8.328-1.84 5.611-8.129 8.949-8.4 9.089zM5.438 1.192a3.62 3.62 0 00-1.543.35C1.651 2.59.543 5.649 1.426 8.361c1.481 4.548 6.4 7.617 7.563 8.289 1.164-.669 6.091-3.722 7.581-8.267.888-2.71-.213-5.772-2.455-6.826a3.852 3.852 0 00-4.68 1.274L9 3.379l-.43-.55a4.021 4.021 0 00-3.132-1.637z"
                         fill="#9d201a"
@@ -245,11 +206,7 @@
               <div class="p-4">
                 <div class="flex items-center">
                   <div>
-                    <svg
-                      xmlns="http://www.w3.org/2000/svg"
-                      width="18"
-                      height="18"
-                    >
+                    <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18">
                       <path
                         d="M8.988 18l-.247-.13c-.267-.14-6.549-3.5-8.378-9.113C-.709 5.464.673 1.732 3.445.442a4.863 4.863 0 015.56 1.126 4.862 4.862 0 015.563-1.11c2.768 1.3 4.143 5.038 3.064 8.328-1.84 5.611-8.129 8.949-8.4 9.089zM5.438 1.192a3.62 3.62 0 00-1.543.35C1.651 2.59.543 5.649 1.426 8.361c1.481 4.548 6.4 7.617 7.563 8.289 1.164-.669 6.091-3.722 7.581-8.267.888-2.71-.213-5.772-2.455-6.826a3.852 3.852 0 00-4.68 1.274L9 3.379l-.43-.55a4.021 4.021 0 00-3.132-1.637z"
                         fill="#9d201a"
@@ -299,16 +256,10 @@
       <div class="bg-gray-900 py-16">
         <div class="flex flex-wrap">
           <div class="p-4 w-full flex items-center justify-center">
-            <img
-              src="assets/img/logos/susie-meyers-golf-logo.png"
-              class="w-24 h-24"
-            />
+            <img src="assets/img/logos/susie-meyers-golf-logo.png" class="w-24 h-24" />
           </div>
           <div class="p-4 w-full flex items-center justify-center">
-            <img
-              src="assets/img/logos/pga-of-america-logo.png"
-              class="w-24 h-24"
-            />
+            <img src="assets/img/logos/pga-of-america-logo.png" class="w-24 h-24" />
           </div>
           <div class="p-4 w-full flex items-center justify-center">
             <img src="assets/img/logos/golf-top-100-logo.png" class="w-24" />
@@ -316,9 +267,7 @@
         </div>
         <div class="flex flex-wrap items-center justify-center my-8">
           <div class="p-4 w-full">
-            <h4
-              class="text-primary-red-600 text-lg uppercase text-center font-600"
-            >
+            <h4 class="text-primary-red-600 text-lg uppercase text-center font-600">
               Play Point A Golf
             </h4>
             <ul class="text-center list-none text-white font-300">
@@ -334,9 +283,7 @@
             </ul>
           </div>
           <div class="p-4 w-full">
-            <h4
-              class="text-primary-red-600 text-lg uppercase text-center font-600"
-            >
+            <h4 class="text-primary-red-600 text-lg uppercase text-center font-600">
               Connect
             </h4>
             <ul class="text-center list-none text-white font-300">
@@ -352,9 +299,7 @@
             </ul>
           </div>
           <div class="p-4 w-full">
-            <h4
-              class="text-primary-red-600 text-lg uppercase text-center font-600"
-            >
+            <h4 class="text-primary-red-600 text-lg uppercase text-center font-600">
               Contact
             </h4>
             <ul class="text-center list-none text-white font-300">
