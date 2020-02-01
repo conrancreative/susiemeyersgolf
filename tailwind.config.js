@@ -74,6 +74,11 @@ module.exports = {
       full: "999px"
     },
     extend: {
+      spacing: {
+        "1/2": "50%",
+        "12/12": "100%"
+      },
+
       colors: {
         "primary-red": {
           100: "#F5E9E8",
@@ -157,25 +162,9 @@ module.exports = {
   },
   variants: {
     opacity: ["hover", "responsive"],
-    textColor: [
-      "active",
-      "focus",
-      "group-hover",
-      "hover",
-      "responsive",
-      "focus"
-    ],
+    textColor: ["active", "focus", "group-hover", "hover", "responsive", "focus"],
     margin: ["last", "first", "odd", "even", "responsive"],
-    backgroundColor: [
-      "last",
-      "first",
-      "odd",
-      "even",
-      "responsive",
-      "hover",
-      "active",
-      "focus"
-    ],
+    backgroundColor: ["last", "first", "odd", "even", "responsive", "hover", "active", "focus"],
     transform: ["responsive"],
     transformOrigin: ["responsive"],
     translate: ["responsive"],
