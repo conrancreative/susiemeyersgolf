@@ -1,285 +1,439 @@
 <!DOCTYPE html>
 <html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <title>
+      Tips For Preparing When You Don’t Have Time | Point A Golf Tips from Susie
+      Meyers
+    </title>
+    <meta
+      name="description"
+      content="If you don’t play a lot or have time to get out and practice beforehand there are some things to do to get yourself prepared, and it really doesn’t take a lot of effort!"
+    />
+    <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png" />
+    <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png" />
+    <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png" />
+    <link rel="stylesheet" href="../build/css/tailwind.css" />
+  </head>
 
-<head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <meta http-equiv="X-UA-Compatible" content="ie=edge" />
-  <title>
-    Tips For Preparing When You Don’t Have Time | Point A Golf Tips from Susie Meyers
-  </title>
-  <meta name="description" content="If you don’t play a lot or have time to get out and practice beforehand there are some things to do to get yourself prepared, and it really doesn’t take a lot of effort!">
-  <link rel="stylesheet" href="../build/css/tailwind.css" />
-</head>
-
-<body>
-  <script src="../assets/js/scripts.js"></script>
-  <header class="w-full flex flex-col">
-    <nav class="z-50 relative">
-      <div class="h-16 bg-white flex items-center px-4 shadow">
-        <div class="w-1/3">
-          <button onclick="navToggle()" class="uppercase font-600 text-primary-red-500 leading-none focus:outline-none">
+  <body>
+    <script src="../assets/js/scripts.js"></script>
+    <header class="w-full flex flex-col">
+      <nav class="z-50 relative">
+        <div class="h-16 bg-white flex items-center px-4 shadow">
+          <div class="w-1/3">
+            <button
+              onclick="navToggle()"
+              class="uppercase font-600 text-primary-red-500 leading-none focus:outline-none"
+            >
+              <div class="text-primary-red-500 font-600 pr-2 flex items-center">
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  width="20"
+                  height="12"
+                  class="fill-current mr-2"
+                >
+                  <g fill="none" stroke="#9d201a" stroke-width="2">
+                    <path data-name="Line 1" d="M0 1h20" />
+                    <path data-name="Line 2" d="M0 6h20" />
+                    <path data-name="Line 3" d="M0 11h20" />
+                  </g>
+                </svg>
+                <span class="pl-2">MENU</span>
+              </div>
+            </button>
+          </div>
+          <div class="w-1/3 flex justify-center">
+            <a href="/">
+              <img
+                src="../assets/img/logos/susie-meyers-golf-logo.png"
+                class="w-24 h-24 mt-16"
+              />
+            </a>
+          </div>
+          <div class="w-1/3 flex justify-end">
+            <a
+              href="/lessons"
+              class="uppercase font-500 text-primary-red-500 font-600 leading-none"
+            >
+              LESSONS
+            </a>
+          </div>
+        </div>
+        <div
+          class="w-full absolute h-screen top-0 left-0 z-0 bg-white hidden"
+          id="nav"
+        >
+          <button
+            onclick="navToggle()"
+            class="h-16 px-4 uppercase font-600 text-primary-red-500 leading-none focus:outline-none"
+          >
             <div class="text-primary-red-500 font-600 pr-2 flex items-center">
-              <svg xmlns="http://www.w3.org/2000/svg" width="20" height="12" class="fill-current mr-2">
-                <g fill="none" stroke="#9d201a" stroke-width="2">
-                  <path data-name="Line 1" d="M0 1h20" />
-                  <path data-name="Line 2" d="M0 6h20" />
-                  <path data-name="Line 3" d="M0 11h20" />
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                width="20"
+                height="12"
+                class="fill-current"
+              >
+                <g>
+                  <path
+                    data-name="Rectangle 28"
+                    d="M5.414 0l10.607 10.607-1.415 1.414L4 1.414z"
+                  />
+                  <path
+                    data-name="Rectangle 29"
+                    d="M4 10.607L14.607 0l1.414 1.415L5.414 12.02z"
+                  />
                 </g>
               </svg>
-              <span class="pl-2">MENU</span>
+              <span class="pl-2">CLOSE</span>
             </div>
           </button>
-        </div>
-        <div class="w-1/3 flex justify-center">
-          <a href="/">
-            <img src="../assets/img/logos/susie-meyers-golf-logo.png" class="w-24 h-24 mt-16" />
-          </a>
-        </div>
-        <div class="w-1/3 flex justify-end">
-          <a href="/lessons" class="uppercase font-500 text-primary-red-500 font-600 leading-none">
-            LESSONS
-          </a>
-        </div>
-      </div>
-      <div class="w-full absolute h-screen top-0 left-0 z-0 bg-white hidden" id="nav">
-        <button onclick="navToggle()" class="h-16 px-4 uppercase font-600 text-primary-red-500 leading-none focus:outline-none">
-          <div class="text-primary-red-500 font-600 pr-2 flex items-center">
-            <svg xmlns="http://www.w3.org/2000/svg" width="20" height="12" class='fill-current'>
-              <g>
-                <path data-name="Rectangle 28" d="M5.414 0l10.607 10.607-1.415 1.414L4 1.414z" />
-                <path data-name="Rectangle 29" d="M4 10.607L14.607 0l1.414 1.415L5.414 12.02z" />
-              </g>
-            </svg>
-            <span class="pl-2">CLOSE</span>
-          </div>
-        </button>
-        <div class="bg-white flex flex-wrap">
-          <div class="mt-4 px-4 w-full md:w-1/2">
-            <a href="/point-a-golf" class="w-full pt-6 pb-1 flex text-xl md:text-2xl lg:text-3xl font-300 tracking-wide leading-none border-b border-gray-200 hover:font-500 hover:text-primary-red-500">Point A Golf</a>
-            <a href="/lessons" class="w-full pt-6 pb-1 flex text-xl md:text-2xl lg:text-3xl font-300 tracking-wide leading-none border-b border-gray-200 hover:font-500 hover:text-primary-red-500">Golf Lessons</a>
-            <a href="/media" class="w-full pt-6 pb-1 flex text-xl md:text-2xl lg:text-3xl font-300 tracking-wide leading-none border-b border-gray-200 hover:font-500 hover:text-primary-red-500">Articles & Media</a>
-            <a href="/contact" class="w-full pt-6 pb-1 flex text-xl md:text-2xl lg:text-3xl font-300 tracking-wide leading-none border-b border-gray-200 hover:font-500 hover:text-primary-red-500">Contact</a>
-            <a href="/point-a-golf-book" class="w-full pt-6 pb-1 flex md:hidden text-xl md:text-2xl lg:text-3xl font-300 tracking-wide leading-none border-b border-gray-200 hover:font-500 hover:text-primary-red-500">Golf From Point A Book</a>
-          </div>
-          <div class="w-full md:w-1/2 mt-8 hidden md:flex flex-wrap md:justify-center">
-            <div class="px-4 w-48 md:w-56 lg:w-64 flex">
-              <img src="../assets/img/book/book-nav.png">
+          <div class="bg-white flex flex-wrap">
+            <div class="mt-4 px-4 w-full md:w-1/2">
+              <a
+                href="/point-a-golf"
+                class="w-full pt-6 pb-1 flex text-xl md:text-2xl lg:text-3xl font-300 tracking-wide leading-none border-b border-gray-200 hover:font-500 hover:text-primary-red-500"
+                >Point A Golf</a
+              >
+              <a
+                href="/lessons"
+                class="w-full pt-6 pb-1 flex text-xl md:text-2xl lg:text-3xl font-300 tracking-wide leading-none border-b border-gray-200 hover:font-500 hover:text-primary-red-500"
+                >Golf Lessons</a
+              >
+              <a
+                href="/media"
+                class="w-full pt-6 pb-1 flex text-xl md:text-2xl lg:text-3xl font-300 tracking-wide leading-none border-b border-gray-200 hover:font-500 hover:text-primary-red-500"
+                >Articles & Media</a
+              >
+              <a
+                href="/contact"
+                class="w-full pt-6 pb-1 flex text-xl md:text-2xl lg:text-3xl font-300 tracking-wide leading-none border-b border-gray-200 hover:font-500 hover:text-primary-red-500"
+                >Contact</a
+              >
+              <a
+                href="/point-a-golf-book"
+                class="w-full pt-6 pb-1 flex md:hidden text-xl md:text-2xl lg:text-3xl font-300 tracking-wide leading-none border-b border-gray-200 hover:font-500 hover:text-primary-red-500"
+                >Golf From Point A Book</a
+              >
             </div>
-            <div class="w-auto px-4 mt-8 w-full md:text-center">
-              <a href="/point-a-golf-book" class="bg-primary-red-500 border border-primary-red-500 shadow-lg rounded-xl text-white px-6 py-4 hover:bg-primary-red-700 hover:border-primary-red-700 hover:text-white focus:outline-none font-500 tracking-wider">
-                Point A Golf Book
-              </a>
-            </div>
-          </div>
-        </div>
-      </div>
-    </nav>
-    <div class="bg-primary-red-500 flex items-center w-full">
-      <div class="w-full max-w-screen-xl mx-auto px-4 py-24">
-        <span class="text-xs font-500 tracking-wide text-white">POINT A GOLF</span>
-        <h1 class="text-white text-3xl md:text-4xl font-200 leading-tight text-left capitalize mt-2">
-          Tips For Preparing When You Don’t Have Time
-        </h1>
-      </div>
-    </div>
-  </header>
-
-  <section class="p-4 max-w-screen-xl mx-auto">
-    <div>
-      <div class="text-primary-red-300 text-sm">
-        <span class="text-gray-500">
-          <a href="/" class="hover:underline">Home</a>
-        </span>
-        /
-        <span class="text-gray-500">
-          <a href="/point-a-golf" class="hover:underline">Point A Golf</a>
-        </span>
-        /
-        <span class="text-gray-600 font-500">
-          Tips For Preparing When You Don’t Have Time
-        </span>
-      </div>
-    </div>
-  </section>
-
-  <section class="p-4 max-w-screen-xl mx-auto flex flex-wrap">
-    <div class="w-full lg:w-3/4 lg:pr-8">
-      <h3 class="text-lg font-500">
-        Getting ready to play golf next week? If you don’t play a lot or have time to get out and practice beforehand there are some things to do to get yourself prepared before the big day and it really doesn’t take a lot of effort!
-      </h3>
-      <p class="text-lg leading-relaxed font-300 mt-8">
-        If you can just take a few minutes in the week before you play to simply think golf. Think about getting your bag ready and what you need in your bag. Think about doing some golf stretches and maybe some swinging before you go out. Think about your warmup time that day and what you want to do there and how much time it will take to get yourself prepared. It’s not really any fun to go out if you’re not ready but you can get ready easier than you thought.
-      </p>
-      <div class="mt-8">
-        <figure>
-          <img src="../assets/img/guides/blog-out-of-time.jpg" />
-          <figcaption class="text-gray-500 uppercase italic text-sm font-400 mt-2">
-            Caption text for the image needed.
-          </figcaption>
-        </figure>
-      </div>
-      <h4 class="text-sm font-600 text-primary-red-500 uppercase leading-tight tracking-wide mt-8">
-        Visualize as much as you can
-      </h4>
-      <p class="text-lg leading-relaxed font-300 mt-4">
-        When you are stopped at a red light you can see yourself making some putts You can see yourself stepping on to the first tee and making a beautiful stroke and watching the ball fly down the fairway. Before you fall asleep you can see the golf course, you can smell the cut grass, you can hear the birds chirping. The more vivid you make your picture the more realistic it is to your “system”. Seeing a golf ball flying down the fairway or on to a green or rolling into the cup will awaken your senses to that possibility.
-      </p>
-      <h4 class="text-sm font-600 text-primary-red-500 uppercase leading-tight tracking-wide mt-8">
-        Use your mind’s eye
-      </h4>
-      <p class="text-lg leading-relaxed font-300 mt-4">
-        Imagine yourself feeling great picking up your tee or smiling as you watch the ball roll into the cup. Just seeing golf in your mind’s eye allows your brain circuits to fire and awaken! Imagine hitting trouble shots that work out and bunker shots that go on to the green. Imagine yourself standing over a chip shot and making a chip stroke and the ball reacting just as you imagined it would.
-      </p>
-      <h4 class="text-sm font-600 text-primary-red-500 uppercase leading-tight tracking-wide mt-8">
-        Planning ahead helps learning
-      </h4>
-      <p class="text-lg leading-relaxed font-300 mt-4">
-        This thought process days before the activity allows for learning and preparation to happen. You could even see a poor shot and see yourself reacting to it in a positive manner. Making a plan ahead of time and then dwelling on it for days will then let that plan come to you much easier the day of your play. You could tell yourself what your goals are days before the round and start contemplating them. A goal like Accepting where your shot goes, Allowing your body to make its best stroke without too much thought, and being Aware of the environment so your senses are piqued.
-      </p>
-      <p class="text-lg leading-relaxed font-300 mt-4">
-        You might see yourself playing a shot and then holding your finish in balance. You might pick out a phrase you want to say the whole round, something like “the shot”, or “hold the finish”, or “accept where the ball goes”, or smooth swing. You might like to review in your mind the concept of Point A and how you can apply it to your game.
-      </p>
-      <p class="text-lg leading-relaxed font-300 mt-4">
-        Seeing yourself playing golf or thinking golf will definitely help you to feel more prepared and competent when you don’t have time to practice.
-      </p>
-    </div>
-    <div class="mt-16 w-full lg:w-1/4 lg:mt-0">
-      <div class="bg-white shadow p-4">
-        <h3 class="text-lg text-primary-red-600 font-400">
-          More Point A Golf Guides
-        </h3>
-        <ul class="list-none text-gray-600 mt-4">
-          <li class="mt-4 first:mt-0 leading-none flex">
-            <div class="h-4 w-1 bg-primary-red-500"></div>
-            <a href="../guides/every-shot-is-a-surprise" class="hover:underline pl-2">
-              Every Shot Is A Surprise
-            </a>
-          </li>
-          <li class="mt-4 first:mt-0 leading-none flex">
-            <div class="h-4 w-1 bg-primary-red-500"></div>
-            <a href="../guides/forward-and-away-thinking" class="hover:underline pl-2">
-              Forward And Away Thinking
-            </a>
-          </li>
-          <li class="mt-4 first:mt-0 leading-none flex">
-            <div class="h-4 w-1 bg-primary-red-500"></div>
-            <a href="../guides/how-to-apply-backward-thinking" class="hover:underline pl-2">
-              How To Apply Backwards Thinking
-            </a>
-          </li>
-          <li class="mt-4 first:mt-0 leading-none flex">
-            <div class="h-4 w-1 bg-primary-red-500"></div>
-            <a href="../guides/meditation-and-golf" class="hover:underline pl-2">
-              Meditation And Golf
-            </a>
-          </li>
-          <li class="mt-4 first:mt-0 leading-none flex">
-            <div class="h-4 w-1 bg-primary-red-500"></div>
-            <a href="../guides/multitasking-and-the-golf-swing" class="hover:underline pl-2">
-              Multitasking And The Golf Swing
-            </a>
-          </li>
-          <li class="mt-4 first:mt-0 leading-none flex">
-            <div class="h-4 w-1 bg-primary-red-500"></div>
-            <a href="../guides/the-art-of-loving-yourself" class="hover:underline pl-2">
-              The Art of Loving Yourself
-            </a>
-          </li>
-        </ul>
-      </div>
-    </div>
-  </section>
-
-  <section class="mt-16">
-    <div class="bg-primary-red-600 py-16">
-      <h2 class="text-white text-3xl font-200 text-center leading-tight">
-        Learn How to<br />
-        <span class="font-600">Play Point A Golf</span>
-      </h2>
-      <div class="flex flex-wrap justify-center mt-8">
-        <div class="w-auto px-2">
-          <button class="bg-white border-2 border-white rounded-xl shadow-lg text-primary-red-600 px-4 py-2 hover:bg-primary-red-700 hover:border-primary-red-700 hover:text-white focus:outline-none font-500">
-            <a href="/lessons">Request A Lesson</a>
-          </button>
-        </div>
-        <div class="w-auto px-2">
-          <button class="bg-transparent border-2 border-white rounded-xl shadow-lg text-white px-4 py-2 hover:bg-primary-red-700 hover:border-primary-red-700 hover:text-white focus:outline-none font-500">
-            <a href="/point-a-golf-book">Point A Golf Book</a>
-          </button>
-        </div>
-      </div>
-    </div>
-  </section>
-
-  <footer>
-    <div class="py-16" style="background: linear-gradient(to bottom, #1a202f 11%,#0e1019 99%);">
-      <div class="flex flex-wrap w-full max-w-screen-md mx-auto">
-        <div class="p-4 w-full sm:w-1/3 flex items-center justify-center">
-          <img src="../assets/img/logos/susie-meyers-golf-logo.png" class="w-24 h-24" />
-        </div>
-        <div class="p-4 w-full sm:w-1/3 sm:order-3 flex items-center justify-center">
-          <img src="../assets/img/logos/pga-of-america-logo.png" class="w-24 h-24" />
-        </div>
-        <div class="p-4 w-full sm:w-1/3 sm:order-2 flex items-center justify-center">
-          <img src="../assets/img/logos/golf-top-100-logo.png" class="w-24" />
-        </div>
-      </div>
-      <div class="flex flex-wrap items-center justify-center my-8">
-        <div class="p-4 w-full max-w-screen-md mx-auto">
-          <h4 class="text-white text-2xl uppercase text-center font-600">
-            Play Point A Golf
-          </h4>
-          <div class="w-full text-center text-white mt-8 flex flex-wrap">
-            <div class="p-2 w-full md:w-1/3 flex justify-center">
-              <a href="" class="w-auto">
-                <div class="font-500 hover:bg-white hover:text-gray-700 px-4 py-2 border border-white rounded-full">
-                  Request a Golf Lesson
-                </div>
-              </a>
-            </div>
-            <div class="p-2 w-full md:w-1/3 flex justify-center">
-              <a href="/lessons">
-                <div class="font-500 hover:bg-white hover:text-gray-700 px-4 py-2 border border-white rounded-full">
+            <div
+              class="w-full md:w-1/2 mt-8 hidden md:flex flex-wrap md:justify-center"
+            >
+              <div class="px-4 w-48 md:w-56 lg:w-64 flex">
+                <img src="../assets/img/book/book-nav.png" />
+              </div>
+              <div class="w-auto px-4 mt-8 w-full md:text-center">
+                <a
+                  href="/point-a-golf-book"
+                  class="bg-primary-red-500 border border-primary-red-500 shadow-lg rounded-xl text-white px-6 py-4 hover:bg-primary-red-700 hover:border-primary-red-700 hover:text-white focus:outline-none font-500 tracking-wider"
+                >
                   Point A Golf Book
-                </div>
-              </a>
-            </div>
-            <div class="p-2 w-full md:w-1/3 flex justify-center">
-              <a href="/point-a-golf-book">
-                <div class="font-500 hover:bg-white hover:text-gray-700 px-4 py-2 border border-white rounded-full">
-                  Point A Golf Philosophy
-                </div>
-              </a>
+                </a>
+              </div>
             </div>
           </div>
         </div>
-      </div>
-      <div class="flex flex-wrap">
-        <div class="text-white text-center font-600 text-lg w-full">&copy; Susie Meyers Golf <span id="year"></span></div>
-        <div class="mt-4 flex justify-center w-full">
-          <div class="p-4">
-            <a href="">
-              <img src="../assets/icons/facebook.png" class="h-10 w-10" />
-            </a>
-          </div>
-          <div class="p-4">
-            <a href="https://www.instagram.com/susiemeyersgolf/" class="cursor-pointer">
-              <img src="../assets/icons/instagram.png" class="h-10 w-10" />
-            </a>
-          </div>
-          <div class="p-4">
-            <a href="https://www.linkedin.com/in/susie-meyers-05942944">
-              <img src="../assets/icons/linkedin.png" class="h-10 w-10" />
-            </a>
-          </div>
+      </nav>
+      <div class="bg-primary-red-500 flex items-center w-full">
+        <div class="w-full max-w-screen-xl mx-auto px-4 py-24">
+          <span class="text-xs font-500 tracking-wide text-white"
+            >POINT A GOLF</span
+          >
+          <h1
+            class="text-white text-3xl md:text-4xl font-200 leading-tight text-left capitalize mt-2"
+          >
+            Tips For Preparing When You Don’t Have Time
+          </h1>
         </div>
       </div>
-    </div>
-  </footer>
-</body>
-<script>
-  document.getElementById("year").innerHTML = new Date().getFullYear();
-</script>
+    </header>
 
+    <section class="p-4 max-w-screen-xl mx-auto">
+      <div>
+        <div class="text-primary-red-300 text-sm">
+          <span class="text-gray-500">
+            <a href="/" class="hover:underline">Home</a>
+          </span>
+          /
+          <span class="text-gray-500">
+            <a href="/point-a-golf" class="hover:underline">Point A Golf</a>
+          </span>
+          /
+          <span class="text-gray-600 font-500">
+            Tips For Preparing When You Don’t Have Time
+          </span>
+        </div>
+      </div>
+    </section>
+
+    <section class="p-4 max-w-screen-xl mx-auto flex flex-wrap">
+      <div class="w-full lg:w-3/4 lg:pr-8">
+        <h3 class="text-lg font-500">
+          Getting ready to play golf next week? If you don’t play a lot or have
+          time to get out and practice beforehand there are some things to do to
+          get yourself prepared before the big day and it really doesn’t take a
+          lot of effort!
+        </h3>
+        <p class="text-lg leading-relaxed font-300 mt-8">
+          If you can just take a few minutes in the week before you play to
+          simply think golf. Think about getting your bag ready and what you
+          need in your bag. Think about doing some golf stretches and maybe some
+          swinging before you go out. Think about your warmup time that day and
+          what you want to do there and how much time it will take to get
+          yourself prepared. It’s not really any fun to go out if you’re not
+          ready but you can get ready easier than you thought.
+        </p>
+        <div class="mt-8">
+          <figure>
+            <img src="../assets/img/guides/blog-out-of-time.jpg" />
+            <figcaption
+              class="text-gray-500 uppercase italic text-sm font-400 mt-2"
+            >
+              Caption text for the image needed.
+            </figcaption>
+          </figure>
+        </div>
+        <h4
+          class="text-sm font-600 text-primary-red-500 uppercase leading-tight tracking-wide mt-8"
+        >
+          Visualize as much as you can
+        </h4>
+        <p class="text-lg leading-relaxed font-300 mt-4">
+          When you are stopped at a red light you can see yourself making some
+          putts You can see yourself stepping on to the first tee and making a
+          beautiful stroke and watching the ball fly down the fairway. Before
+          you fall asleep you can see the golf course, you can smell the cut
+          grass, you can hear the birds chirping. The more vivid you make your
+          picture the more realistic it is to your “system”. Seeing a golf ball
+          flying down the fairway or on to a green or rolling into the cup will
+          awaken your senses to that possibility.
+        </p>
+        <h4
+          class="text-sm font-600 text-primary-red-500 uppercase leading-tight tracking-wide mt-8"
+        >
+          Use your mind’s eye
+        </h4>
+        <p class="text-lg leading-relaxed font-300 mt-4">
+          Imagine yourself feeling great picking up your tee or smiling as you
+          watch the ball roll into the cup. Just seeing golf in your mind’s eye
+          allows your brain circuits to fire and awaken! Imagine hitting trouble
+          shots that work out and bunker shots that go on to the green. Imagine
+          yourself standing over a chip shot and making a chip stroke and the
+          ball reacting just as you imagined it would.
+        </p>
+        <h4
+          class="text-sm font-600 text-primary-red-500 uppercase leading-tight tracking-wide mt-8"
+        >
+          Planning ahead helps learning
+        </h4>
+        <p class="text-lg leading-relaxed font-300 mt-4">
+          This thought process days before the activity allows for learning and
+          preparation to happen. You could even see a poor shot and see yourself
+          reacting to it in a positive manner. Making a plan ahead of time and
+          then dwelling on it for days will then let that plan come to you much
+          easier the day of your play. You could tell yourself what your goals
+          are days before the round and start contemplating them. A goal like
+          Accepting where your shot goes, Allowing your body to make its best
+          stroke without too much thought, and being Aware of the environment so
+          your senses are piqued.
+        </p>
+        <p class="text-lg leading-relaxed font-300 mt-4">
+          You might see yourself playing a shot and then holding your finish in
+          balance. You might pick out a phrase you want to say the whole round,
+          something like “the shot”, or “hold the finish”, or “accept where the
+          ball goes”, or smooth swing. You might like to review in your mind the
+          concept of Point A and how you can apply it to your game.
+        </p>
+        <p class="text-lg leading-relaxed font-300 mt-4">
+          Seeing yourself playing golf or thinking golf will definitely help you
+          to feel more prepared and competent when you don’t have time to
+          practice.
+        </p>
+      </div>
+      <div class="mt-16 w-full lg:w-1/4 lg:mt-0">
+        <div class="bg-white shadow p-4">
+          <h3 class="text-lg text-primary-red-600 font-400">
+            More Point A Golf Guides
+          </h3>
+          <ul class="list-none text-gray-600 mt-4">
+            <li class="mt-4 first:mt-0 leading-none flex">
+              <div class="h-4 w-1 bg-primary-red-500"></div>
+              <a
+                href="../guides/every-shot-is-a-surprise"
+                class="hover:underline pl-2"
+              >
+                Every Shot Is A Surprise
+              </a>
+            </li>
+            <li class="mt-4 first:mt-0 leading-none flex">
+              <div class="h-4 w-1 bg-primary-red-500"></div>
+              <a
+                href="../guides/forward-and-away-thinking"
+                class="hover:underline pl-2"
+              >
+                Forward And Away Thinking
+              </a>
+            </li>
+            <li class="mt-4 first:mt-0 leading-none flex">
+              <div class="h-4 w-1 bg-primary-red-500"></div>
+              <a
+                href="../guides/how-to-apply-backward-thinking"
+                class="hover:underline pl-2"
+              >
+                How To Apply Backwards Thinking
+              </a>
+            </li>
+            <li class="mt-4 first:mt-0 leading-none flex">
+              <div class="h-4 w-1 bg-primary-red-500"></div>
+              <a
+                href="../guides/meditation-and-golf"
+                class="hover:underline pl-2"
+              >
+                Meditation And Golf
+              </a>
+            </li>
+            <li class="mt-4 first:mt-0 leading-none flex">
+              <div class="h-4 w-1 bg-primary-red-500"></div>
+              <a
+                href="../guides/multitasking-and-the-golf-swing"
+                class="hover:underline pl-2"
+              >
+                Multitasking And The Golf Swing
+              </a>
+            </li>
+            <li class="mt-4 first:mt-0 leading-none flex">
+              <div class="h-4 w-1 bg-primary-red-500"></div>
+              <a
+                href="../guides/the-art-of-loving-yourself"
+                class="hover:underline pl-2"
+              >
+                The Art of Loving Yourself
+              </a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </section>
+
+    <section class="mt-16">
+      <div class="bg-primary-red-600 py-16">
+        <h2 class="text-white text-3xl font-200 text-center leading-tight">
+          Learn How to<br />
+          <span class="font-600">Play Point A Golf</span>
+        </h2>
+        <div class="flex flex-wrap justify-center mt-8">
+          <div class="w-auto px-2">
+            <button
+              class="bg-white border-2 border-white rounded-xl shadow-lg text-primary-red-600 px-4 py-2 hover:bg-primary-red-700 hover:border-primary-red-700 hover:text-white focus:outline-none font-500"
+            >
+              <a href="/lessons">Request A Lesson</a>
+            </button>
+          </div>
+          <div class="w-auto px-2">
+            <button
+              class="bg-transparent border-2 border-white rounded-xl shadow-lg text-white px-4 py-2 hover:bg-primary-red-700 hover:border-primary-red-700 hover:text-white focus:outline-none font-500"
+            >
+              <a href="/point-a-golf-book">Point A Golf Book</a>
+            </button>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <footer>
+      <div
+        class="py-16"
+        style="background: linear-gradient(to bottom, #1a202f 11%,#0e1019 99%);"
+      >
+        <div class="flex flex-wrap w-full max-w-screen-md mx-auto">
+          <div class="p-4 w-full sm:w-1/3 flex items-center justify-center">
+            <img
+              src="../assets/img/logos/susie-meyers-golf-logo.png"
+              class="w-24 h-24"
+            />
+          </div>
+          <div
+            class="p-4 w-full sm:w-1/3 sm:order-3 flex items-center justify-center"
+          >
+            <img
+              src="../assets/img/logos/pga-of-america-logo.png"
+              class="w-24 h-24"
+            />
+          </div>
+          <div
+            class="p-4 w-full sm:w-1/3 sm:order-2 flex items-center justify-center"
+          >
+            <img src="../assets/img/logos/golf-top-100-logo.png" class="w-24" />
+          </div>
+        </div>
+        <div class="flex flex-wrap items-center justify-center my-8">
+          <div class="p-4 w-full max-w-screen-md mx-auto">
+            <h4 class="text-white text-2xl uppercase text-center font-600">
+              Play Point A Golf
+            </h4>
+            <div class="w-full text-center text-white mt-8 flex flex-wrap">
+              <div class="p-2 w-full md:w-1/3 flex justify-center">
+                <a href="" class="w-auto">
+                  <div
+                    class="font-500 hover:bg-white hover:text-gray-700 px-4 py-2 border border-white rounded-full"
+                  >
+                    Request a Golf Lesson
+                  </div>
+                </a>
+              </div>
+              <div class="p-2 w-full md:w-1/3 flex justify-center">
+                <a href="/lessons">
+                  <div
+                    class="font-500 hover:bg-white hover:text-gray-700 px-4 py-2 border border-white rounded-full"
+                  >
+                    Point A Golf Book
+                  </div>
+                </a>
+              </div>
+              <div class="p-2 w-full md:w-1/3 flex justify-center">
+                <a href="/point-a-golf-book">
+                  <div
+                    class="font-500 hover:bg-white hover:text-gray-700 px-4 py-2 border border-white rounded-full"
+                  >
+                    Point A Golf Philosophy
+                  </div>
+                </a>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="flex flex-wrap">
+          <div class="text-white text-center font-600 text-lg w-full">
+            &copy; Susie Meyers Golf <span id="year"></span>
+          </div>
+          <div class="mt-4 flex justify-center w-full">
+            <div class="p-4">
+              <a href="">
+                <img src="../assets/icons/facebook.png" class="h-10 w-10" />
+              </a>
+            </div>
+            <div class="p-4">
+              <a
+                href="https://www.instagram.com/susiemeyersgolf/"
+                class="cursor-pointer"
+              >
+                <img src="../assets/icons/instagram.png" class="h-10 w-10" />
+              </a>
+            </div>
+            <div class="p-4">
+              <a href="https://www.linkedin.com/in/susie-meyers-05942944">
+                <img src="../assets/icons/linkedin.png" class="h-10 w-10" />
+              </a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </footer>
+  </body>
+  <script>
+    document.getElementById("year").innerHTML = new Date().getFullYear();
+  </script>
 </html>

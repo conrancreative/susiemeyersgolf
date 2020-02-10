@@ -1,381 +1,601 @@
 <!DOCTYPE html>
 <html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <title>Susie Meyers Golf Instruction Tucson, AZ</title>
+    <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png" />
+    <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png" />
+    <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png" />
+    <link rel="stylesheet" href="build/css/tailwind.css" />
+  </head>
 
-<head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <meta http-equiv="X-UA-Compatible" content="ie=edge" />
-  <title>Susie Meyers Golf Instruction Tucson, AZ</title>
-  <link rel="stylesheet" href="build/css/tailwind.css" />
-</head>
-
-<body>
-  <script src="assets/js/scripts.js"></script>
-  <header class="w-full flex flex-col min-h-screen bg-cover bg-top" style="background-image: url('assets/img/susie-meyers-putting-lesson.jpg')">
-    <nav class="z-50 relative">
-      <div class="h-16 bg-white flex items-center px-4 shadow">
-        <div class="w-1/3">
-          <button onclick="navToggle()" class="uppercase font-600 text-primary-red-500 leading-none focus:outline-none">
+  <body>
+    <script src="assets/js/scripts.js"></script>
+    <header
+      class="w-full flex flex-col min-h-screen bg-cover bg-top"
+      style="background-image: url('assets/img/susie-meyers-putting-lesson.jpg')"
+    >
+      <nav class="z-50 relative">
+        <div class="h-16 bg-white flex items-center px-4 shadow">
+          <div class="w-1/3">
+            <button
+              onclick="navToggle()"
+              class="uppercase font-600 text-primary-red-500 leading-none focus:outline-none"
+            >
+              <div class="text-primary-red-500 font-600 pr-2 flex items-center">
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  width="20"
+                  height="12"
+                  class="fill-current mr-2"
+                >
+                  <g fill="none" stroke="#9d201a" stroke-width="2">
+                    <path data-name="Line 1" d="M0 1h20" />
+                    <path data-name="Line 2" d="M0 6h20" />
+                    <path data-name="Line 3" d="M0 11h20" />
+                  </g>
+                </svg>
+                <span class="pl-2">MENU</span>
+              </div>
+            </button>
+          </div>
+          <div class="w-1/3 flex justify-center">
+            <a href="/">
+              <img
+                src="assets/img/logos/susie-meyers-golf-logo.png"
+                class="w-24 h-24 mt-16"
+              />
+            </a>
+          </div>
+          <div class="w-1/3 flex justify-end">
+            <a
+              href="/lessons"
+              class="uppercase font-500 text-primary-red-500 font-600 leading-none"
+            >
+              LESSONS
+            </a>
+          </div>
+        </div>
+        <div
+          class="w-full absolute h-screen top-0 left-0 z-0 bg-white hidden"
+          id="nav"
+        >
+          <button
+            onclick="navToggle()"
+            class="h-16 px-4 uppercase font-600 text-primary-red-500 leading-none focus:outline-none"
+          >
             <div class="text-primary-red-500 font-600 pr-2 flex items-center">
-              <svg xmlns="http://www.w3.org/2000/svg" width="20" height="12" class="fill-current mr-2">
-                <g fill="none" stroke="#9d201a" stroke-width="2">
-                  <path data-name="Line 1" d="M0 1h20" />
-                  <path data-name="Line 2" d="M0 6h20" />
-                  <path data-name="Line 3" d="M0 11h20" />
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                width="20"
+                height="12"
+                class="fill-current"
+              >
+                <g>
+                  <path
+                    data-name="Rectangle 28"
+                    d="M5.414 0l10.607 10.607-1.415 1.414L4 1.414z"
+                  />
+                  <path
+                    data-name="Rectangle 29"
+                    d="M4 10.607L14.607 0l1.414 1.415L5.414 12.02z"
+                  />
                 </g>
               </svg>
-              <span class="pl-2">MENU</span>
+              <span class="pl-2">CLOSE</span>
             </div>
           </button>
-        </div>
-        <div class="w-1/3 flex justify-center">
-          <a href="/">
-            <img src="assets/img/logos/susie-meyers-golf-logo.png" class="w-24 h-24 mt-16" />
-          </a>
-        </div>
-        <div class="w-1/3 flex justify-end">
-          <a href="/lessons" class="uppercase font-500 text-primary-red-500 font-600 leading-none">
-            LESSONS
-          </a>
-        </div>
-      </div>
-      <div class="w-full absolute h-screen top-0 left-0 z-0 bg-white hidden" id="nav">
-        <button onclick="navToggle()" class="h-16 px-4 uppercase font-600 text-primary-red-500 leading-none focus:outline-none">
-          <div class="text-primary-red-500 font-600 pr-2 flex items-center">
-            <svg xmlns="http://www.w3.org/2000/svg" width="20" height="12" class='fill-current'>
-              <g>
-                <path data-name="Rectangle 28" d="M5.414 0l10.607 10.607-1.415 1.414L4 1.414z" />
-                <path data-name="Rectangle 29" d="M4 10.607L14.607 0l1.414 1.415L5.414 12.02z" />
-              </g>
-            </svg>
-            <span class="pl-2">CLOSE</span>
-          </div>
-        </button>
-        <div class="bg-white flex flex-wrap">
-          <div class="mt-4 px-4 w-full md:w-1/2">
-            <a href="/point-a-golf" class="w-full pt-6 pb-1 flex text-xl md:text-2xl lg:text-3xl font-300 tracking-wide leading-none border-b border-gray-200 hover:font-500 hover:text-primary-red-500">Point A Golf</a>
-            <a href="/lessons" class="w-full pt-6 pb-1 flex text-xl md:text-2xl lg:text-3xl font-300 tracking-wide leading-none border-b border-gray-200 hover:font-500 hover:text-primary-red-500">Golf Lessons</a>
-            <a href="/media" class="w-full pt-6 pb-1 flex text-xl md:text-2xl lg:text-3xl font-300 tracking-wide leading-none border-b border-gray-200 hover:font-500 hover:text-primary-red-500">Articles & Media</a>
-            <a href="/contact" class="w-full pt-6 pb-1 flex text-xl md:text-2xl lg:text-3xl font-300 tracking-wide leading-none border-b border-gray-200 hover:font-500 hover:text-primary-red-500">Contact</a>
-            <a href="/point-a-golf-book" class="w-full pt-6 pb-1 flex md:hidden text-xl md:text-2xl lg:text-3xl font-300 tracking-wide leading-none border-b border-gray-200 hover:font-500 hover:text-primary-red-500">Golf From Point A Book</a>
-          </div>
-          <div class="w-full md:w-1/2 mt-8 hidden md:flex flex-wrap md:justify-center">
-            <div class="px-4 w-48 md:w-56 lg:w-64 flex">
-              <img src="assets/img/book/book-nav.png">
+          <div class="bg-white flex flex-wrap">
+            <div class="mt-4 px-4 w-full md:w-1/2">
+              <a
+                href="/point-a-golf"
+                class="w-full pt-6 pb-1 flex text-xl md:text-2xl lg:text-3xl font-300 tracking-wide leading-none border-b border-gray-200 hover:font-500 hover:text-primary-red-500"
+                >Point A Golf</a
+              >
+              <a
+                href="/lessons"
+                class="w-full pt-6 pb-1 flex text-xl md:text-2xl lg:text-3xl font-300 tracking-wide leading-none border-b border-gray-200 hover:font-500 hover:text-primary-red-500"
+                >Golf Lessons</a
+              >
+              <a
+                href="/media"
+                class="w-full pt-6 pb-1 flex text-xl md:text-2xl lg:text-3xl font-300 tracking-wide leading-none border-b border-gray-200 hover:font-500 hover:text-primary-red-500"
+                >Articles & Media</a
+              >
+              <a
+                href="/contact"
+                class="w-full pt-6 pb-1 flex text-xl md:text-2xl lg:text-3xl font-300 tracking-wide leading-none border-b border-gray-200 hover:font-500 hover:text-primary-red-500"
+                >Contact</a
+              >
+              <a
+                href="/point-a-golf-book"
+                class="w-full pt-6 pb-1 flex md:hidden text-xl md:text-2xl lg:text-3xl font-300 tracking-wide leading-none border-b border-gray-200 hover:font-500 hover:text-primary-red-500"
+                >Golf From Point A Book</a
+              >
             </div>
-            <div class="w-auto px-4 mt-8 w-full md:text-center">
-              <a href="/point-a-golf-book" class="bg-primary-red-500 border border-primary-red-500 shadow-lg rounded-xl text-white px-6 py-4 hover:bg-primary-red-700 hover:border-primary-red-700 hover:text-white focus:outline-none font-500 tracking-wider">
+            <div
+              class="w-full md:w-1/2 mt-8 hidden md:flex flex-wrap md:justify-center"
+            >
+              <div class="px-4 w-48 md:w-56 lg:w-64 flex">
+                <img src="assets/img/book/book-nav.png" />
+              </div>
+              <div class="w-auto px-4 mt-8 w-full md:text-center">
+                <a
+                  href="/point-a-golf-book"
+                  class="bg-primary-red-500 border border-primary-red-500 shadow-lg rounded-xl text-white px-6 py-4 hover:bg-primary-red-700 hover:border-primary-red-700 hover:text-white focus:outline-none font-500 tracking-wider"
+                >
+                  Point A Golf Book
+                </a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </nav>
+
+      <section class="px-4 flex items-end flex-grow pb-32">
+        <div class="flex flex-wrap items-center max-w-screen-xl mx-auto">
+          <div class="flex flex-wrap w-full justify-center">
+            <div class="w-auto px-4 pt-4">
+              <a
+                href="/lessons"
+                class="flex bg-primary-red-500 border-2 border-primary-red-500 rounded-xl shadow-lg text-white px-4 py-2 hover:bg-primary-red-700 hover:border-primary-red-700 focus:outline-none font-500"
+              >
+                Request A Lesson
+              </a>
+            </div>
+            <div class="w-auto px-4 pt-4">
+              <a
+                href="/point-a-golf-book"
+                class="flex bg-transparent border-2 border-white rounded-xl shadow-lg text-white px-4 py-2 hover:bg-white hover:text-gray-700 focus:outline-none font-500"
+              >
                 Point A Golf Book
               </a>
             </div>
           </div>
         </div>
-      </div>
-    </nav>
+      </section>
+    </header>
 
-    <section class="px-4 flex items-end flex-grow pb-32">
-      <div class="flex flex-wrap items-center max-w-screen-xl mx-auto">
-        <div class="flex flex-wrap w-full justify-center">
-          <div class="w-auto px-4 pt-4">
-            <a href="/lessons" class="flex bg-primary-red-500 border-2 border-primary-red-500 rounded-xl shadow-lg text-white px-4 py-2 hover:bg-primary-red-700 hover:border-primary-red-700 focus:outline-none font-500">
-              Request A Lesson
+    <section class="mt-16 lg:mt-24 w-full max-w-screen-xl mx-auto">
+      <div class="w-full px-4">
+        <h1
+          class="text-3xl md:text-4xl lg:text-5xl font-200 leading-tight font-600 flex flex-wrap items-end"
+        >
+          <span class="w-full">Susie Meyers</span>
+          <span
+            class="w-full font-600 text-base md:text-lg uppercase mt-2 text-primary-red-600"
+            >PGA Golf Instructor</span
+          >
+        </h1>
+        <p class="text-xl md:text-2xl font-200 leading-tight pt-2">
+          Golf Digest Top 100 professional golf instructor based in Tucson, AZ.
+        </p>
+      </div>
+    </section>
+
+    <section
+      class="mt-16 md:px-4 lg:mt-24 bg-white flex flex-wrap max-w-screen-xl mx-auto"
+    >
+      <div class="w-full md:w-2/3 md:order-2 md:pl-8 px-4">
+        <p class="font-200 text-lg">
+          Susie's approach to spending time with a student is based upon the
+          philosophies of Point A Golf. It is flexible instruction geared to the
+          differences found in every student’s style. Over the years Susie's
+          clients have included a large volume of men, women and juniors, state
+          champions, PGA Tour winners, LPGA players, recreational players and
+          beginners. Many golfers have said they find it to be a very unique and
+          insightful time. This view is built upon years of competitive golf and
+          30 years of coaching. Susie's mission is to provide and support a
+          positive learning experience.
+        </p>
+        <div class="mt-8 max-w-sm">
+          <div class="bg-primary-red-500 h-1 w-10 mt-4"></div>
+          <p class="mt-3 text-sm leading-tight">
+            Susie has been a member of The PGA of America since 1994, competed
+            on the LPGA Tour, played in 4 US Opens and one LPGA Championship.
+          </p>
+        </div>
+      </div>
+      <div
+        class="w-full h-120 bg-cover bg-top md:bg-center bg-no-repeat mt-16 md:mt-0 md:w-1/3 md:order-1"
+        style="background-image: url('assets/img/susie-meyers-short-game-lesson.jpg');"
+      ></div>
+    </section>
+
+    <section class="mt-16 lg:mt-24">
+      <div
+        class="p-4 py-16 pb-32 shadow-lg"
+        style="background: radial-gradient(ellipse at center, #3f4c6b 0%, #2d3748 84%);"
+      >
+        <div class="flex items-center justify-center">
+          <img src="assets/img/logos/golf-top-100-logo.png" class="w-40" />
+        </div>
+        <div class="mt-4">
+          <h2 class="text-white text-3xl font-200 text-center leading-tight">
+            Awards and <br />
+            <span class="font-600">Accomplishments</span>
+          </h2>
+        </div>
+      </div>
+      <div class="-mt-32 w-full max-w-screen-xl mx-auto">
+        <div class="mt-16 w-full flex flex-wrap">
+          <!-- CARD -->
+          <div class="p-4 w-full sm:w-1/2 text-center flex">
+            <div
+              class="p-4 bg-white shadow-lg text-center flex flex-wrap w-full"
+            >
+              <h3
+                class="uppercase text-gray-500 font-400 leading-tight w-full text-sm"
+              >
+                GOLF MAGAZINE 2018, 2019
+              </h3>
+              <span
+                class="text-black font-600 text-xl leading-tight w-full mt-2"
+              >
+                Top 100 Teachers In America
+              </span>
+            </div>
+          </div>
+          <!-- CARD -->
+          <div class="p-4 w-full sm:w-1/2 text-center flex">
+            <div
+              class="p-4 bg-white shadow-lg text-center flex flex-wrap w-full"
+            >
+              <h3
+                class="uppercase text-gray-500 font-400 leading-tight text-sm w-full"
+              >
+                GOLF MAGAZINE 2016
+              </h3>
+              <span
+                class="text-black font-600 text-xl leading-tight w-full mt-2"
+              >
+                Top Instructor In Arizona
+              </span>
+            </div>
+          </div>
+          <!-- CARD -->
+          <div class="p-4 w-full sm:w-1/2 text-center flex">
+            <div
+              class="p-4 bg-white shadow-lg text-center flex flex-wrap w-full"
+            >
+              <h3
+                class="uppercase text-gray-500 font-400 leading-tight text-sm w-full"
+              >
+                SWSPGA SOUTHERN CHAPTER 2011, ’12, ’13, ’14, ‘16
+              </h3>
+              <span
+                class="text-black font-600 text-xl leading-tight w-full mt-2"
+              >
+                Women’s Chapter Champion
+              </span>
+            </div>
+          </div>
+          <!-- CARD -->
+          <div class="p-4 w-full sm:w-1/2 text-center flex">
+            <div
+              class="p-4 bg-white shadow-lg text-center flex flex-wrap w-full"
+            >
+              <h3
+                class="uppercase text-gray-500 font-400 leading-tight text-sm w-full"
+              >
+                ARIZONA ATHLETICS 2016
+              </h3>
+              <span
+                class="text-black font-600 text-xl leading-tight w-full mt-2"
+              >
+                Silver Anniversary Award
+              </span>
+            </div>
+          </div>
+          <!-- CARD -->
+          <div class="p-4 w-full sm:w-1/2 text-center flex">
+            <div
+              class="p-4 bg-white shadow-lg text-center flex flex-wrap w-full"
+            >
+              <h3
+                class="uppercase text-gray-500 font-400 leading-tight text-sm w-full"
+              >
+                SWSPGA SOUTHERN CHAPTER 2012
+              </h3>
+              <span
+                class="text-black font-600 text-xl leading-tight w-full mt-2"
+              >
+                Teacher Of The Year
+              </span>
+            </div>
+          </div>
+          <!-- CARD -->
+          <div class="p-4 w-full sm:w-1/2 text-center flex">
+            <div
+              class="p-4 bg-white shadow-lg text-center flex flex-wrap w-full"
+            >
+              <h3
+                class="uppercase text-gray-500 font-400 leading-tight text-sm w-full"
+              >
+                GOLF FOR WOMEN MAGAZINE 2001
+              </h3>
+              <span
+                class="text-black font-600 text-xl leading-tight w-full mt-2"
+              >
+                Top 50 Teachers
+              </span>
+            </div>
+          </div>
+          <!-- CARD -->
+          <div class="p-4 w-full sm:w-1/2 text-center flex">
+            <div
+              class="p-4 bg-white shadow-lg text-center flex flex-wrap w-full"
+            >
+              <h3
+                class="uppercase text-gray-500 font-400 leading-tight text-sm w-full"
+              >
+                ARIZONA 2014
+              </h3>
+              <span
+                class="text-black font-600 text-xl leading-tight w-full mt-2"
+              >
+                Golf Digest Top Teachers
+              </span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <section class="mt-16 lg:mt-24 max-w-screen-lg mx-auto">
+      <h2
+        class="text-primary-red-600 text-3xl font-200 text-center leading-tight"
+      >
+        Feedback and <br />
+        <span class="font-600">Testimonials</span>
+      </h2>
+      <div class="mt-8">
+        <div class="flex flex-wrap">
+          <!-- Testimonial -->
+          <div class="p-4 w-full md:w-1/2">
+            <p
+              class="leading-normal font-400 px-10 text-center md:text-left text-gray-900"
+            >
+              Point A is more than just a way to play golf it is a way life. I
+              have not only improved my golf game but I have found much more
+              clarity and joy on and off the course using the tools that Point A
+              offers.
+            </p>
+            <span
+              class="mt-4 font-600 text-black text-sm leading-tight text-center block"
+              >Brittany</span
+            >
+          </div>
+          <!-- Testimonial -->
+          <div class="p-4 w-full md:w-1/2">
+            <p
+              class="leading-normal font-400 px-10 text-center md:text-left text-gray-900"
+            >
+              I’ve taken a lot of lessons and Susie’s way of explaining things
+              makes so much sense that I know it will work. She has taken the
+              complexity out of the shot by explaining the golf club and how it
+              is to be used. My body just follows along and there is much less
+              to think about. I just want to practice having very simple ideas
+              about what to do with the golf club and allow my mind to be quiet
+              while doing it!
+            </p>
+            <span
+              class="mt-4 font-600 text-black text-sm leading-tight text-center block"
+              >Patrick</span
+            >
+          </div>
+          <!-- Testimonial -->
+          <div class="p-4 w-full md:w-1/2">
+            <p
+              class="leading-normal font-400 px-10 text-center md:text-left text-gray-900"
+            >
+              Point A allows me to not be so helter-skelter when I am on the
+              golf course. I have a plan that I can fall back on and if I get
+              off track I just go back to Point A. If I had a bad hole, I remind
+              myself to be at Point A, it’s like starting over again. I feel
+              more in control of me.
+            </p>
+            <span
+              class="mt-4 font-600 text-black text-sm leading-tight text-center block"
+              >Richard</span
+            >
+          </div>
+        </div>
+      </div>
+    </section>
+    <section class="mt-16">
+      <div class="bg-gray-200 shadow-lg py-16 pb-32 ">
+        <div
+          class="flex flex-wrap justify-center md:justify-between max-w-screen-xl mx-auto"
+        >
+          <h2
+            class="text-primary-red-600 text-3xl font-200 text-center leading-tight w-full md:w-auto md:text-left px-4"
+          >
+            Follow Susie <br />
+            <span class="font-600">On Instagram</span>
+          </h2>
+          <div class="w-full px-4 flex justify-center mt-8 md:w-auto">
+            <button
+              class="bg-white border-2 border-white rounded-xl shadow-lg text-primary-red-600 px-4 py-2 hover:bg-primary-red-700 hover:border-primary-red-700 hover:text-white focus:outline-none font-500"
+            >
+              <a
+                href="https://www.instagram.com/susiemeyersgolf/"
+                target="_blank"
+                >@susiemeyersgolf</a
+              >
+            </button>
+          </div>
+        </div>
+      </div>
+      <div class="-mt-24 w-full max-w-screen-xl mx-auto">
+        <div class="flex flex-wrap">
+          <div class="p-4 w-full sm:w-1/3">
+            <a
+              href="https://www.instagram.com/susiemeyersgolf/"
+              target="_blank"
+            >
+              <div
+                class="relative w-full bg-green-500 shadow-lg"
+                style="padding-bottom:100%;"
+              >
+                <img
+                  src="assets/img/instagram/IMG_0110.jpg"
+                  class="object-cover absolute h-full w-full"
+                />
+              </div>
             </a>
           </div>
-          <div class="w-auto px-4 pt-4">
-            <a href="/point-a-golf-book" class="flex bg-transparent border-2 border-white rounded-xl shadow-lg text-white px-4 py-2 hover:bg-white hover:text-gray-700 focus:outline-none font-500">
-              Point A Golf Book
+          <div class="p-4 w-full sm:w-1/3">
+            <a
+              href="https://www.instagram.com/susiemeyersgolf/"
+              target="_blank"
+            >
+              <div
+                class="relative w-full bg-green-500 shadow-lg"
+                style="padding-bottom:100%;"
+              >
+                <img
+                  src="assets/img/instagram/IMG_0212.JPG"
+                  class="object-cover absolute h-full w-full"
+                />
+              </div>
+            </a>
+          </div>
+          <div class="p-4 w-full sm:w-1/3">
+            <a
+              href="https://www.instagram.com/susiemeyersgolf/"
+              target="_blank"
+            >
+              <div
+                class="relative w-full bg-green-500 shadow-lg"
+                style="padding-bottom:100%;"
+              >
+                <img
+                  src="assets/img/instagram/IMG_1516.jpg"
+                  class="object-cover absolute h-full w-full"
+                />
+              </div>
             </a>
           </div>
         </div>
       </div>
     </section>
-  </header>
-
-  <section class="mt-16 lg:mt-24 w-full max-w-screen-xl mx-auto">
-    <div class="w-full px-4">
-      <h1 class="text-3xl md:text-4xl lg:text-5xl font-200 leading-tight font-600 flex flex-wrap items-end">
-        <span class="w-full">Susie Meyers</span>
-        <span class="w-full font-600 text-base md:text-lg uppercase mt-2 text-primary-red-600">PGA Golf Instructor</span>
-      </h1>
-      <p class="text-xl md:text-2xl font-200 leading-tight pt-2">
-        Golf Digest Top 100 professional golf instructor based in Tucson, AZ.
-      </p>
-    </div>
-  </section>
-
-  <section class="mt-16 md:px-4 lg:mt-24 bg-white flex flex-wrap max-w-screen-xl mx-auto">
-    <div class="w-full md:w-2/3 md:order-2 md:pl-8 px-4">
-      <p class="font-200 text-lg">
-        Susie's approach to spending time with a student is based upon the philosophies of Point A Golf. It is flexible instruction geared to the differences found in every student’s style. Over the years Susie's clients have included a large volume of men, women and juniors, state champions, PGA Tour winners, LPGA players, recreational players and beginners. Many golfers have said they find it to be a very unique and insightful time. This view is built upon years of competitive golf and 30 years of coaching. Susie's mission is to provide and support a positive learning experience.
-      </p>
-      <div class="mt-8 max-w-sm">
-        <div class="bg-primary-red-500 h-1 w-10 mt-4"></div>
-        <p class="mt-3 text-sm leading-tight">
-          Susie has been a member of The PGA of America since 1994, competed on the LPGA Tour, played in 4 US Opens and one LPGA Championship.
-        </p>
-      </div>
-    </div>
-    <div class="w-full h-120 bg-cover bg-top md:bg-center bg-no-repeat mt-16 md:mt-0 md:w-1/3 md:order-1" style="background-image: url('assets/img/susie-meyers-short-game-lesson.jpg');"></div>
-
-  </section>
-
-  <section class="mt-16 lg:mt-24">
-    <div class="p-4 py-16 pb-32 shadow-lg" style="background: radial-gradient(ellipse at center, #3f4c6b 0%, #2d3748 84%);">
-      <div class="flex items-center justify-center">
-        <img src="assets/img/logos/golf-top-100-logo.png" class="w-40" />
-      </div>
-      <div class="mt-4">
+    <section class="mt-16">
+      <div class="bg-primary-red-600 py-16">
         <h2 class="text-white text-3xl font-200 text-center leading-tight">
-          Awards and <br />
-          <span class="font-600">Accomplishments</span>
+          Learn How to<br />
+          <span class="font-600">Play Point A Golf</span>
         </h2>
-      </div>
-    </div>
-    <div class="-mt-32 w-full max-w-screen-xl mx-auto">
-      <div class="mt-16 w-full flex flex-wrap">
-        <!-- CARD -->
-        <div class="p-4 w-full sm:w-1/2 text-center flex">
-          <div class="p-4 bg-white shadow-lg text-center flex flex-wrap w-full">
-            <h3 class="uppercase text-gray-500 font-400 leading-tight w-full text-sm">
-              GOLF MAGAZINE 2018, 2019
-            </h3>
-            <span class="text-black font-600 text-xl leading-tight w-full mt-2">
-              Top 100 Teachers In America
-            </span>
+        <div class="flex flex-wrap justify-center mt-8">
+          <div class="w-auto px-2">
+            <button
+              class="bg-white border-2 border-white rounded-xl shadow-lg text-primary-red-600 px-4 py-2 hover:bg-primary-red-700 hover:border-primary-red-700 hover:text-white focus:outline-none font-500"
+            >
+              <a href="/lessons">Request A Lesson</a>
+            </button>
           </div>
-        </div>
-        <!-- CARD -->
-        <div class="p-4 w-full sm:w-1/2 text-center flex">
-          <div class="p-4 bg-white shadow-lg text-center flex flex-wrap w-full">
-            <h3 class="uppercase text-gray-500 font-400 leading-tight text-sm w-full">
-              GOLF MAGAZINE 2016
-            </h3>
-            <span class="text-black font-600 text-xl leading-tight w-full mt-2">
-              Top Instructor In Arizona
-            </span>
-          </div>
-        </div>
-        <!-- CARD -->
-        <div class="p-4 w-full sm:w-1/2 text-center flex">
-          <div class="p-4 bg-white shadow-lg text-center flex flex-wrap w-full">
-            <h3 class="uppercase text-gray-500 font-400 leading-tight text-sm w-full">
-              SWSPGA SOUTHERN CHAPTER 2011, ’12, ’13, ’14, ‘16
-            </h3>
-            <span class="text-black font-600 text-xl leading-tight w-full mt-2">
-              Women’s Chapter Champion
-            </span>
-          </div>
-        </div>
-        <!-- CARD -->
-        <div class="p-4 w-full sm:w-1/2 text-center flex">
-          <div class="p-4 bg-white shadow-lg text-center flex flex-wrap w-full">
-            <h3 class="uppercase text-gray-500 font-400 leading-tight text-sm w-full">
-              ARIZONA ATHLETICS 2016
-            </h3>
-            <span class="text-black font-600 text-xl leading-tight w-full mt-2">
-              Silver Anniversary Award
-            </span>
-          </div>
-        </div>
-        <!-- CARD -->
-        <div class="p-4 w-full sm:w-1/2 text-center flex">
-          <div class="p-4 bg-white shadow-lg text-center flex flex-wrap w-full">
-            <h3 class="uppercase text-gray-500 font-400 leading-tight text-sm w-full">
-              SWSPGA SOUTHERN CHAPTER 2012
-            </h3>
-            <span class="text-black font-600 text-xl leading-tight w-full mt-2">
-              Teacher Of The Year
-            </span>
-          </div>
-        </div>
-        <!-- CARD -->
-        <div class="p-4 w-full sm:w-1/2 text-center flex">
-          <div class="p-4 bg-white shadow-lg text-center flex flex-wrap w-full">
-            <h3 class="uppercase text-gray-500 font-400 leading-tight text-sm w-full">
-              GOLF FOR WOMEN MAGAZINE 2001
-            </h3>
-            <span class="text-black font-600 text-xl leading-tight w-full mt-2">
-              Top 50 Teachers
-            </span>
-          </div>
-        </div>
-        <!-- CARD -->
-        <div class="p-4 w-full sm:w-1/2 text-center flex">
-          <div class="p-4 bg-white shadow-lg text-center flex flex-wrap w-full">
-            <h3 class="uppercase text-gray-500 font-400 leading-tight text-sm w-full">
-              ARIZONA 2014
-            </h3>
-            <span class="text-black font-600 text-xl leading-tight w-full mt-2">
-              Golf Digest Top Teachers
-            </span>
+          <div class="w-auto px-2">
+            <button
+              class="bg-transparent border-2 border-white rounded-xl shadow-lg text-white px-4 py-2 hover:bg-primary-red-700 hover:border-primary-red-700 hover:text-white focus:outline-none font-500"
+            >
+              <a href="/point-a-golf-book">Point A Golf Book</a>
+            </button>
           </div>
         </div>
       </div>
-    </div>
-  </section>
-  <section class="mt-16 lg:mt-24 max-w-screen-lg mx-auto">
-    <h2 class="text-primary-red-600 text-3xl font-200 text-center leading-tight">
-      Feedback and <br />
-      <span class="font-600">Testimonials</span>
-    </h2>
-    <div class="mt-8">
-      <div class="flex flex-wrap">
-        <!-- Testimonial -->
-        <div class="p-4 w-full md:w-1/2">
-          <p class="leading-normal font-400 px-10 text-center md:text-left text-gray-900">
-            Point A is more than just a way to play golf it is a way life. I have not only improved my golf game but I have found much more clarity and joy on
-            and off the course using the tools that Point A offers.
-          </p>
-          <span class="mt-4 font-600 text-black text-sm leading-tight text-center block">Brittany</span>
+    </section>
+    <footer>
+      <div
+        class="py-16"
+        style="background: linear-gradient(to bottom, #1a202f 11%,#0e1019 99%);"
+      >
+        <div class="flex flex-wrap w-full max-w-screen-md mx-auto">
+          <div class="p-4 w-full sm:w-1/3 flex items-center justify-center">
+            <img
+              src="assets/img/logos/susie-meyers-golf-logo.png"
+              class="w-24 h-24"
+            />
+          </div>
+          <div
+            class="p-4 w-full sm:w-1/3 sm:order-3 flex items-center justify-center"
+          >
+            <img
+              src="assets/img/logos/pga-of-america-logo.png"
+              class="w-24 h-24"
+            />
+          </div>
+          <div
+            class="p-4 w-full sm:w-1/3 sm:order-2 flex items-center justify-center"
+          >
+            <img src="assets/img/logos/golf-top-100-logo.png" class="w-24" />
+          </div>
         </div>
-        <!-- Testimonial -->
-        <div class="p-4 w-full md:w-1/2">
-          <p class="leading-normal font-400 px-10 text-center md:text-left text-gray-900">
-            I’ve taken a lot of lessons and Susie’s way of explaining things makes so much sense that I know it will work. She has taken the complexity out of
-            the shot by explaining the golf club and how it is to be used. My body just follows along and there is much less to think about. I just want to
-            practice having very simple ideas about what to do with the golf club and allow my mind to be quiet while doing it!
-          </p>
-          <span class="mt-4 font-600 text-black text-sm leading-tight text-center block">Patrick</span>
-        </div>
-        <!-- Testimonial -->
-        <div class="p-4 w-full md:w-1/2">
-          <p class="leading-normal font-400 px-10 text-center md:text-left text-gray-900">
-            Point A allows me to not be so helter-skelter when I am on the golf course. I have a plan that I can fall back on and if I get off track I just go
-            back to Point A. If I had a bad hole, I remind myself to be at Point A, it’s like starting over again. I feel more in control of me.
-          </p>
-          <span class="mt-4 font-600 text-black text-sm leading-tight text-center block">Richard</span>
-        </div>
-      </div>
-    </div>
-  </section>
-  <section class="mt-16">
-    <div class="bg-gray-200 shadow-lg py-16 pb-32 ">
-      <div class="flex flex-wrap justify-center md:justify-between max-w-screen-xl mx-auto">
-        <h2 class="text-primary-red-600 text-3xl font-200 text-center leading-tight w-full md:w-auto md:text-left px-4">
-          Follow Susie <br />
-          <span class="font-600">On Instagram</span>
-        </h2>
-        <div class="w-full px-4 flex justify-center mt-8 md:w-auto">
-          <button class="bg-white border-2 border-white rounded-xl shadow-lg text-primary-red-600 px-4 py-2 hover:bg-primary-red-700 hover:border-primary-red-700 hover:text-white focus:outline-none font-500">
-            <a href="https://www.instagram.com/susiemeyersgolf/" target="_blank">@susiemeyersgolf</a>
-          </button>
-        </div>
-      </div>
-    </div>
-    <div class="-mt-24 w-full max-w-screen-xl mx-auto">
-      <div class="flex flex-wrap">
-        <div class="p-4 w-full sm:w-1/3">
-          <a href="https://www.instagram.com/susiemeyersgolf/" target="_blank">
-            <div class="relative w-full bg-green-500 shadow-lg" style="padding-bottom:100%;">
-              <img src="assets/img/instagram/IMG_0110.jpg" class="object-cover absolute h-full w-full" />
+        <div class="flex flex-wrap items-center justify-center my-8">
+          <div class="p-4 w-full max-w-screen-md mx-auto">
+            <h4 class="text-white text-2xl uppercase text-center font-600">
+              Play Point A Golf
+            </h4>
+            <div class="w-full text-center text-white mt-8 flex flex-wrap">
+              <div class="p-2 w-full md:w-1/3 flex justify-center">
+                <a href="/lessons" class="w-auto">
+                  <div
+                    class="font-500 hover:bg-white hover:text-gray-700 px-4 py-2 border border-white rounded-full"
+                  >
+                    Request a Golf Lesson
+                  </div>
+                </a>
+              </div>
+              <div class="p-2 w-full md:w-1/3 flex justify-center">
+                <a href="/point-a-golf-book">
+                  <div
+                    class="font-500 hover:bg-white hover:text-gray-700 px-4 py-2 border border-white rounded-full"
+                  >
+                    Point A Golf Book
+                  </div>
+                </a>
+              </div>
+              <div class="p-2 w-full md:w-1/3 flex justify-center">
+                <a href="/point-a-golf">
+                  <div
+                    class="font-500 hover:bg-white hover:text-gray-700 px-4 py-2 border border-white rounded-full"
+                  >
+                    Point A Golf Philosophy
+                  </div>
+                </a>
+              </div>
             </div>
-          </a>
+          </div>
         </div>
-        <div class="p-4 w-full sm:w-1/3">
-          <a href="https://www.instagram.com/susiemeyersgolf/" target="_blank">
-            <div class="relative w-full bg-green-500 shadow-lg" style="padding-bottom:100%;">
-              <img src="assets/img/instagram/IMG_0212.JPG" class="object-cover absolute h-full w-full" />
-            </div>
-          </a>
-        </div>
-        <div class="p-4 w-full sm:w-1/3">
-          <a href="https://www.instagram.com/susiemeyersgolf/" target="_blank">
-            <div class="relative w-full bg-green-500 shadow-lg" style="padding-bottom:100%;">
-              <img src="assets/img/instagram/IMG_1516.jpg" class="object-cover absolute h-full w-full" />
-            </div>
-          </a>
-        </div>
-      </div>
-    </div>
-  </section>
-  <section class="mt-16">
-    <div class="bg-primary-red-600 py-16">
-      <h2 class="text-white text-3xl font-200 text-center leading-tight">
-        Learn How to<br />
-        <span class="font-600">Play Point A Golf</span>
-      </h2>
-      <div class="flex flex-wrap justify-center mt-8">
-        <div class="w-auto px-2">
-          <button class="bg-white border-2 border-white rounded-xl shadow-lg text-primary-red-600 px-4 py-2 hover:bg-primary-red-700 hover:border-primary-red-700 hover:text-white focus:outline-none font-500">
-            <a href="/lessons">Request A Lesson</a>
-          </button>
-        </div>
-        <div class="w-auto px-2">
-          <button class="bg-transparent border-2 border-white rounded-xl shadow-lg text-white px-4 py-2 hover:bg-primary-red-700 hover:border-primary-red-700 hover:text-white focus:outline-none font-500">
-            <a href="/point-a-golf-book">Point A Golf Book</a>
-          </button>
-        </div>
-      </div>
-    </div>
-  </section>
-  <footer>
-    <div class="py-16" style="background: linear-gradient(to bottom, #1a202f 11%,#0e1019 99%);">
-      <div class="flex flex-wrap w-full max-w-screen-md mx-auto">
-        <div class="p-4 w-full sm:w-1/3 flex items-center justify-center">
-          <img src="assets/img/logos/susie-meyers-golf-logo.png" class="w-24 h-24" />
-        </div>
-        <div class="p-4 w-full sm:w-1/3 sm:order-3 flex items-center justify-center">
-          <img src="assets/img/logos/pga-of-america-logo.png" class="w-24 h-24" />
-        </div>
-        <div class="p-4 w-full sm:w-1/3 sm:order-2 flex items-center justify-center">
-          <img src="assets/img/logos/golf-top-100-logo.png" class="w-24" />
-        </div>
-      </div>
-      <div class="flex flex-wrap items-center justify-center my-8">
-        <div class="p-4 w-full max-w-screen-md mx-auto">
-          <h4 class="text-white text-2xl uppercase text-center font-600">
-            Play Point A Golf
-          </h4>
-          <div class="w-full text-center text-white mt-8 flex flex-wrap">
-            <div class="p-2 w-full md:w-1/3 flex justify-center">
-              <a href="/lessons" class="w-auto">
-                <div class="font-500 hover:bg-white hover:text-gray-700 px-4 py-2 border border-white rounded-full">
-                  Request a Golf Lesson
-                </div>
+        <div class="flex flex-wrap">
+          <div class="text-white text-center font-600 text-lg w-full">
+            &copy; Susie Meyers Golf <span id="year"></span>
+          </div>
+          <div class="mt-4 flex justify-center w-full">
+            <div class="p-4">
+              <a href="">
+                <img src="assets/icons/facebook.png" class="h-10 w-10" />
               </a>
             </div>
-            <div class="p-2 w-full md:w-1/3 flex justify-center">
-              <a href="/point-a-golf-book">
-                <div class="font-500 hover:bg-white hover:text-gray-700 px-4 py-2 border border-white rounded-full">
-                  Point A Golf Book
-                </div>
+            <div class="p-4">
+              <a
+                href="https://www.instagram.com/susiemeyersgolf/"
+                class="cursor-pointer"
+              >
+                <img src="assets/icons/instagram.png" class="h-10 w-10" />
               </a>
             </div>
-            <div class="p-2 w-full md:w-1/3 flex justify-center">
-              <a href="/point-a-golf">
-                <div class="font-500 hover:bg-white hover:text-gray-700 px-4 py-2 border border-white rounded-full">
-                  Point A Golf Philosophy
-                </div>
+            <div class="p-4">
+              <a href="https://www.linkedin.com/in/susie-meyers-05942944">
+                <img src="assets/icons/linkedin.png" class="h-10 w-10" />
               </a>
             </div>
           </div>
         </div>
       </div>
-      <div class="flex flex-wrap">
-        <div class="text-white text-center font-600 text-lg w-full">&copy; Susie Meyers Golf <span id="year"></span></div>
-        <div class="mt-4 flex justify-center w-full">
-          <div class="p-4">
-            <a href="">
-              <img src="assets/icons/facebook.png" class="h-10 w-10" />
-            </a>
-          </div>
-          <div class="p-4">
-            <a href="https://www.instagram.com/susiemeyersgolf/" class="cursor-pointer">
-              <img src="assets/icons/instagram.png" class="h-10 w-10" />
-            </a>
-          </div>
-          <div class="p-4">
-            <a href="https://www.linkedin.com/in/susie-meyers-05942944">
-              <img src="assets/icons/linkedin.png" class="h-10 w-10" />
-            </a>
-          </div>
-        </div>
-      </div>
-    </div>
-  </footer>
-</body>
-<script>
-  document.getElementById("year").innerHTML = new Date().getFullYear();
-</script>
-
+    </footer>
+  </body>
+  <script>
+    document.getElementById("year").innerHTML = new Date().getFullYear();
+  </script>
 </html>

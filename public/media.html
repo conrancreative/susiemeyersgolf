@@ -1,415 +1,644 @@
 <!DOCTYPE html>
 <html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <link rel="stylesheet" href="build/css/tailwind.css" />
+    <title>Articles And Media | Susie Meyers Golf Instruction Tucson, AZ</title>
+    <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png" />
+    <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png" />
+    <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png" />
+  </head>
 
-<head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <meta http-equiv="X-UA-Compatible" content="ie=edge" />
-  <link rel="stylesheet" href="build/css/tailwind.css" />
-  <title>Articles And Media | Susie Meyers Golf Instruction Tucson, AZ</title>
-</head>
-
-<body>
-  <script src="assets/js/scripts.js"></script>
-  <header class="w-full flex flex-col min-h-screen">
-    <nav class="z-50 relative">
-      <div class="h-16 bg-white flex items-center px-4 shadow">
-        <div class="w-1/3">
-          <button onclick="navToggle()" class="uppercase font-600 text-primary-red-500 leading-none focus:outline-none">
+  <body>
+    <script src="assets/js/scripts.js"></script>
+    <header class="w-full flex flex-col min-h-screen">
+      <nav class="z-50 relative">
+        <div class="h-16 bg-white flex items-center px-4 shadow">
+          <div class="w-1/3">
+            <button
+              onclick="navToggle()"
+              class="uppercase font-600 text-primary-red-500 leading-none focus:outline-none"
+            >
+              <div class="text-primary-red-500 font-600 pr-2 flex items-center">
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  width="20"
+                  height="12"
+                  class="fill-current mr-2"
+                >
+                  <g fill="none" stroke="#9d201a" stroke-width="2">
+                    <path data-name="Line 1" d="M0 1h20" />
+                    <path data-name="Line 2" d="M0 6h20" />
+                    <path data-name="Line 3" d="M0 11h20" />
+                  </g>
+                </svg>
+                <span class="pl-2">MENU</span>
+              </div>
+            </button>
+          </div>
+          <div class="w-1/3 flex justify-center">
+            <a href="/">
+              <img
+                src="assets/img/logos/susie-meyers-golf-logo.png"
+                class="w-24 h-24 mt-16"
+              />
+            </a>
+          </div>
+          <div class="w-1/3 flex justify-end">
+            <a
+              href="/lessons"
+              class="uppercase font-500 text-primary-red-500 font-600 leading-none"
+            >
+              LESSONS
+            </a>
+          </div>
+        </div>
+        <div
+          class="w-full absolute h-screen top-0 left-0 z-0 bg-white hidden"
+          id="nav"
+        >
+          <button
+            onclick="navToggle()"
+            class="h-16 px-4 uppercase font-600 text-primary-red-500 leading-none focus:outline-none"
+          >
             <div class="text-primary-red-500 font-600 pr-2 flex items-center">
-              <svg xmlns="http://www.w3.org/2000/svg" width="20" height="12" class="fill-current mr-2">
-                <g fill="none" stroke="#9d201a" stroke-width="2">
-                  <path data-name="Line 1" d="M0 1h20" />
-                  <path data-name="Line 2" d="M0 6h20" />
-                  <path data-name="Line 3" d="M0 11h20" />
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                width="20"
+                height="12"
+                class="fill-current"
+              >
+                <g>
+                  <path
+                    data-name="Rectangle 28"
+                    d="M5.414 0l10.607 10.607-1.415 1.414L4 1.414z"
+                  />
+                  <path
+                    data-name="Rectangle 29"
+                    d="M4 10.607L14.607 0l1.414 1.415L5.414 12.02z"
+                  />
                 </g>
               </svg>
-              <span class="pl-2">MENU</span>
+              <span class="pl-2">CLOSE</span>
             </div>
           </button>
-        </div>
-        <div class="w-1/3 flex justify-center">
-          <a href="/">
-            <img src="assets/img/logos/susie-meyers-golf-logo.png" class="w-24 h-24 mt-16" />
-          </a>
-        </div>
-        <div class="w-1/3 flex justify-end">
-          <a href="/lessons" class="uppercase font-500 text-primary-red-500 font-600 leading-none">
-            LESSONS
-          </a>
-        </div>
-      </div>
-      <div class="w-full absolute h-screen top-0 left-0 z-0 bg-white hidden" id="nav">
-        <button onclick="navToggle()" class="h-16 px-4 uppercase font-600 text-primary-red-500 leading-none focus:outline-none">
-          <div class="text-primary-red-500 font-600 pr-2 flex items-center">
-            <svg xmlns="http://www.w3.org/2000/svg" width="20" height="12" class='fill-current'>
-              <g>
-                <path data-name="Rectangle 28" d="M5.414 0l10.607 10.607-1.415 1.414L4 1.414z" />
-                <path data-name="Rectangle 29" d="M4 10.607L14.607 0l1.414 1.415L5.414 12.02z" />
-              </g>
-            </svg>
-            <span class="pl-2">CLOSE</span>
-          </div>
-        </button>
-        <div class="bg-white flex flex-wrap">
-          <div class="mt-4 px-4 w-full md:w-1/2">
-            <a href="/point-a-golf" class="w-full pt-6 pb-1 flex text-xl md:text-2xl lg:text-3xl font-300 tracking-wide leading-none border-b border-gray-200 hover:font-500 hover:text-primary-red-500">Point A Golf</a>
-            <a href="/lessons" class="w-full pt-6 pb-1 flex text-xl md:text-2xl lg:text-3xl font-300 tracking-wide leading-none border-b border-gray-200 hover:font-500 hover:text-primary-red-500">Golf Lessons</a>
-            <a href="/media" class="w-full pt-6 pb-1 flex text-xl md:text-2xl lg:text-3xl font-300 tracking-wide leading-none border-b border-gray-200 hover:font-500 hover:text-primary-red-500">Articles & Media</a>
-            <a href="/contact" class="w-full pt-6 pb-1 flex text-xl md:text-2xl lg:text-3xl font-300 tracking-wide leading-none border-b border-gray-200 hover:font-500 hover:text-primary-red-500">Contact</a>
-            <a href="/point-a-golf-book" class="w-full pt-6 pb-1 flex md:hidden text-xl md:text-2xl lg:text-3xl font-300 tracking-wide leading-none border-b border-gray-200 hover:font-500 hover:text-primary-red-500">Golf From Point A Book</a>
-          </div>
-          <div class="w-full md:w-1/2 mt-8 hidden md:flex flex-wrap md:justify-center">
-            <div class="px-4 w-48 md:w-56 lg:w-64 flex">
-              <img src="assets/img/book/book-nav.png">
+          <div class="bg-white flex flex-wrap">
+            <div class="mt-4 px-4 w-full md:w-1/2">
+              <a
+                href="/point-a-golf"
+                class="w-full pt-6 pb-1 flex text-xl md:text-2xl lg:text-3xl font-300 tracking-wide leading-none border-b border-gray-200 hover:font-500 hover:text-primary-red-500"
+                >Point A Golf</a
+              >
+              <a
+                href="/lessons"
+                class="w-full pt-6 pb-1 flex text-xl md:text-2xl lg:text-3xl font-300 tracking-wide leading-none border-b border-gray-200 hover:font-500 hover:text-primary-red-500"
+                >Golf Lessons</a
+              >
+              <a
+                href="/media"
+                class="w-full pt-6 pb-1 flex text-xl md:text-2xl lg:text-3xl font-300 tracking-wide leading-none border-b border-gray-200 hover:font-500 hover:text-primary-red-500"
+                >Articles & Media</a
+              >
+              <a
+                href="/contact"
+                class="w-full pt-6 pb-1 flex text-xl md:text-2xl lg:text-3xl font-300 tracking-wide leading-none border-b border-gray-200 hover:font-500 hover:text-primary-red-500"
+                >Contact</a
+              >
+              <a
+                href="/point-a-golf-book"
+                class="w-full pt-6 pb-1 flex md:hidden text-xl md:text-2xl lg:text-3xl font-300 tracking-wide leading-none border-b border-gray-200 hover:font-500 hover:text-primary-red-500"
+                >Golf From Point A Book</a
+              >
             </div>
-            <div class="w-auto px-4 mt-8 w-full md:text-center">
-              <a href="/point-a-golf-book" class="bg-primary-red-500 border border-primary-red-500 shadow-lg rounded-xl text-white px-6 py-4 hover:bg-primary-red-700 hover:border-primary-red-700 hover:text-white focus:outline-none font-500 tracking-wider">
-                Point A Golf Book
-              </a>
-            </div>
-          </div>
-        </div>
-      </div>
-    </nav>
-    <div class="bg-cover bg-top flex-grow" style="background-image: url('assets/img/susie-meyers-golf-clinic.jpg');"></div>
-    <div class="bg-primary-red-500 py-8">
-      <h1 class="text-white text-3xl font-200 leading-tight max-w-screen-xl mx-auto px-4">
-        Golf Articles and <br />
-        <span class="font-600">Media</span>
-      </h1>
-    </div>
-  </header>
-  <section class="mt-16 max-w-screen-xl mx-auto">
-    <div class="bg-white px-4">
-      <h2 class="text-primary-red-500 text-2xl font-200 leading-tight">
-        Podcasts &amp; Radio Segments
-      </h2>
-      <h3 class="text-lg font-400 pt-4 leading-tight">
-        Susie is regularly featured on KBLUam.com. Check back here for upcoming shows!
-      </h3>
-    </div>
-  </section>
-
-  <section class="mt-8 max-w-screen-xl mx-auto">
-    <div class="flex flex-wrap w-full">
-      <a href="http://www.blogtalkradio.com/back9report/2018/11/14/the-back-9-report" target="_blank" class="p-4 w-full sm:w-1/2 lg:w-1/3 flex">
-        <div class="w-full flex flex-wrap shadow-lg">
-          <div class="bg-white w-full">
-            <div class="relative w-full bg-green-500" style="padding-bottom:60%;">
-              <img src="assets/img/podcasts/back-9-report.png" class="object-cover absolute h-full w-full" />
-            </div>
-            <div class="p-4">
-              <div class="flex items-center justify-between">
-                <div>
-                  <span class="text-gray-500 uppercase tracking-wide font-200 text-sm">November 13, 2018</span>
-                </div>
-                <div>
-                  <span class="font-200 text-sm text-primary-red-500 leading-none">
-                    96 mins
-                  </span>
-                </div>
+            <div
+              class="w-full md:w-1/2 mt-8 hidden md:flex flex-wrap md:justify-center"
+            >
+              <div class="px-4 w-48 md:w-56 lg:w-64 flex">
+                <img src="assets/img/book/book-nav.png" />
               </div>
-              <div>
-                <p class="font-500 text-gray-900 text-xl leading-tight mt-2">
-                  The Back 9 Report
-                </p>
-              </div>
-            </div>
-          </div>
-          <div class="pl-4 pb-4">
-            <div class="border border-gray-500 hover:border-primary-red-500 hover:bg-primary-red-500 rounded-full flex items-center justify-center text-gray-500 h-12 w-12">
-              <div class="text-gray-500 hover:text-white">
-                <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" class="pl-1 fill-current">
-                  <defs>
-                    <clipPath id="a">
-                      <path d="M0 0h24v24H0z" />
-                    </clipPath>
-                  </defs>
-                  <path data-name="Path 6" d="M27 22L4.513 6.492" />
-                  <path data-name="play-button" d="M20.468 11.529L3.9.1a.572.572 0 00-.9.47v22.859a.571.571 0 00.9.47L20.468 12.47a.571.571 0 000-.941z" />
-                </svg>
-              </div>
-            </div>
-          </div>
-        </div>
-      </a>
-
-      <a href="http://www.blogtalkradio.com/womenofgolf/2017/10/10/women-of-golf--with-susie-meyers--top-100-teaching-in-america--part-2-1" target="_blank" class="p-4 w-full sm:w-1/2 lg:w-1/3 flex">
-        <div class="w-full flex flex-wrap shadow-lg">
-          <div class="bg-white w-full">
-            <div class="relative w-full bg-green-500" style="padding-bottom:60%;">
-              <img src="assets/img/podcasts/women-of-golf.png" class="object-cover absolute h-full w-full" />
-            </div>
-            <div class="p-4">
-              <div class="flex items-center justify-between">
-                <div>
-                  <span class="text-gray-500 uppercase tracking-wide font-200 text-sm">October 10, 2017</span>
-                </div>
-                <div>
-                  <span class="font-200 text-sm text-primary-red-500 leading-none">
-                    59 mins
-                  </span>
-                </div>
-              </div>
-              <div>
-                <p class="font-500 text-gray-900 text-xl leading-tight mt-2">
-                  Blog Talk Radio - Women of Golf
-                </p>
-              </div>
-            </div>
-          </div>
-          <div class="pl-4 pb-4">
-            <div class="border border-gray-500 hover:border-primary-red-500 hover:bg-primary-red-500 rounded-full flex items-center justify-center text-gray-500 h-12 w-12">
-              <div class="text-gray-500 hover:text-white">
-                <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" class="pl-1 fill-current">
-                  <defs>
-                    <clipPath id="a">
-                      <path d="M0 0h24v24H0z" />
-                    </clipPath>
-                  </defs>
-                  <path data-name="Path 6" d="M27 22L4.513 6.492" />
-                  <path data-name="play-button" d="M20.468 11.529L3.9.1a.572.572 0 00-.9.47v22.859a.571.571 0 00.9.47L20.468 12.47a.571.571 0 000-.941z" />
-                </svg>
-              </div>
-            </div>
-          </div>
-        </div>
-      </a>
-
-      <a href="http://www.themarkbishopshow.com/wp-content/uploads/2017/09/MB-09-16-17p.mp3?_=6" target="_blank" class="p-4 w-full sm:w-1/2 lg:w-1/3 flex">
-        <div class="w-full flex flex-wrap shadow-lg">
-          <div class="bg-white w-full">
-            <div class="relative w-full bg-green-500" style="padding-bottom:60%;">
-              <img src="assets/img/podcasts/mark-bishop-show.png" class="object-cover absolute h-full w-full" />
-            </div>
-            <div class="p-4">
-              <div class="flex items-center justify-between">
-                <div>
-                  <span class="text-gray-500 uppercase tracking-wide font-200 text-sm">September 16, 2017</span>
-                </div>
-                <div>
-                  <span class="font-200 text-sm text-primary-red-500 leading-none">
-                    56 mins
-                  </span>
-                </div>
-              </div>
-              <div>
-                <p class="font-500 text-gray-900 text-xl leading-tight mt-2">
-                  The Mark Bishop Show
-                </p>
-              </div>
-            </div>
-          </div>
-          <div class="pl-4 pb-4">
-            <div class="border border-gray-500 hover:border-primary-red-500 hover:bg-primary-red-500 rounded-full flex items-center justify-center text-gray-500 h-12 w-12">
-              <div class="text-gray-500 hover:text-white">
-                <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" class="pl-1 fill-current">
-                  <defs>
-                    <clipPath id="a">
-                      <path d="M0 0h24v24H0z" />
-                    </clipPath>
-                  </defs>
-                  <path data-name="Path 6" d="M27 22L4.513 6.492" />
-                  <path data-name="play-button" d="M20.468 11.529L3.9.1a.572.572 0 00-.9.47v22.859a.571.571 0 00.9.47L20.468 12.47a.571.571 0 000-.941z" />
-                </svg>
-              </div>
-            </div>
-          </div>
-        </div>
-      </a>
-
-      <a href="https://www.blubrry.com/coachingmindspodcast/21801454/episode-8-susie-meyers-golf-magazine-top-100-teacher" target="_blank" class="p-4 w-full sm:w-1/2 lg:w-1/3 flex">
-        <div class="w-full flex flex-wrap shadow-lg">
-          <div class="bg-white w-full">
-            <div class="relative w-full bg-green-500" style="padding-bottom:60%;">
-              <img src="assets/img/podcasts/coaching-minds.png" class="object-cover absolute h-full w-full" />
-            </div>
-            <div class="p-4">
-              <div class="flex items-center justify-between">
-                <div>
-                  <span class="text-gray-500 uppercase tracking-wide font-200 text-sm">March 13, 2017</span>
-                </div>
-                <div>
-                  <span class="font-200 text-sm text-primary-red-500 leading-none">
-                    48 mins
-                  </span>
-                </div>
-              </div>
-              <div>
-                <p class="font-500 text-gray-900 text-xl leading-tight mt-2">
-                  Coaching Minds with Justin Lewis
-                </p>
-              </div>
-            </div>
-          </div>
-          <div class="pl-4 pb-4">
-            <div class="border border-gray-500 hover:border-primary-red-500 hover:bg-primary-red-500 rounded-full flex items-center justify-center text-gray-500 h-12 w-12">
-              <div class="text-gray-500 hover:text-white">
-                <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" class="pl-1 fill-current">
-                  <defs>
-                    <clipPath id="a">
-                      <path d="M0 0h24v24H0z" />
-                    </clipPath>
-                  </defs>
-                  <path data-name="Path 6" d="M27 22L4.513 6.492" />
-                  <path data-name="play-button" d="M20.468 11.529L3.9.1a.572.572 0 00-.9.47v22.859a.571.571 0 00.9.47L20.468 12.47a.571.571 0 000-.941z" />
-                </svg>
-              </div>
-            </div>
-          </div>
-        </div>
-      </a>
-    </div>
-  </section>
-
-  <section class="mt-16 max-w-screen-xl mx-auto">
-    <div class="px-4">
-      <h2 class="text-primary-red-500 text-2xl font-200 leading-tight">
-        Articles &amp; Editorials
-      </h2>
-      <h3 class="text-lg font-400 pt-4 leading-tight">
-        Susie is mentioned in a variety of golf publications around the country.
-      </h3>
-    </div>
-    <div class="flex flex-wrap mt-8">
-      <div class="p-4 w-full md:w-1/2 flex">
-        <div class="w-full">
-          <div class="border-b border-gray-200 pb-4">
-            <a href="https://www.linkedin.com/pulse/leadership-lessons-learned-from-my-interview-susie-meyers-lewis?published=t">
-              <h4 class="text-md leading-tight text-gray-900 font-500 hover:underline hover:text-primary-red-500">
-                Leadership Lessons Learned From My Interview With Susie Meyers
-              </h4>
-            </a>
-          </div>
-          <div class="flex items-center mt-2">
-            <span class="text-sm text-gray-500 font-200 leading-none uppercase"> march 16, 2017</span>
-            <span class="text-sm text-primary-red-500 font-200 leading-none tracking-wide uppercase ml-4"> linkedin.com</span>
-          </div>
-        </div>
-      </div>
-      <div class="p-4 w-full md:w-1/2 flex">
-        <div class="w-full">
-          <div class="border-b border-gray-200 pb-4">
-            <a href="http://tucson.com/sports/greghansen/hansen-positive-approach-makes-meyers-one-of-america-s-best/article_d98f1fd5-c6a4-589f-8218-641f7f8c3a35.html">
-              <h4 class="text-md leading-tight text-gray-900 font-500 hover:underline hover:text-primary-red-500">
-                Positive Approach Makes Meyers One Of America’s Best Golf Coaches
-              </h4>
-            </a>
-          </div>
-          <div class="flex items-center mt-2">
-            <span class="text-sm text-gray-500 font-200 leading-none uppercase"> december 21, 2016</span>
-            <span class="text-sm text-primary-red-500 font-200 leading-none tracking-wide uppercase ml-4"> tucson.com</span>
-          </div>
-        </div>
-      </div>
-      <div class="p-4 w-full md:w-1/2 flex">
-        <div class="w-full">
-          <div class="border-b border-gray-200 pb-4">
-            <a href="http://www.golfdigest.com/story/derek-ernsts-less-traveled-road-to-pga-tour-success">
-              <h4 class="text-md leading-tight text-gray-900 font-500 hover:underline hover:text-primary-red-500">
-                Derek Ernst’s Less-Traveled Road To PGA Tour Success
-              </h4>
-            </a>
-          </div>
-          <div class="flex items-center mt-2">
-            <span class="text-sm text-gray-500 font-200 leading-none uppercase"> may 6, 2013</span>
-            <span class="text-sm text-primary-red-500 font-200 leading-none tracking-wide uppercase ml-4"> golf digest</span>
-          </div>
-        </div>
-      </div>
-    </div>
-  </section>
-
-  <section class="mt-16">
-    <div class="bg-primary-red-600 py-16">
-      <h2 class="text-white text-3xl font-200 text-center leading-tight">
-        Learn How to<br />
-        <span class="font-600">Play Point A Golf</span>
-      </h2>
-      <div class="flex flex-wrap justify-center mt-8">
-        <div class="w-auto px-2">
-          <button class="bg-white border-2 border-white rounded-xl shadow-lg text-primary-red-600 px-4 py-2 hover:bg-primary-red-700 hover:border-primary-red-700 hover:text-white focus:outline-none font-500">
-            <a href="/lessons">Request A Lesson</a>
-          </button>
-        </div>
-        <div class="w-auto px-2">
-          <button class="bg-transparent border-2 border-white rounded-xl shadow-lg text-white px-4 py-2 hover:bg-primary-red-700 hover:border-primary-red-700 hover:text-white focus:outline-none font-500">
-            <a href="/point-a-golf-book">Point A Golf Book</a>
-          </button>
-        </div>
-      </div>
-    </div>
-  </section>
-
-  <footer>
-    <div class="py-16" style="background: linear-gradient(to bottom, #1a202f 11%,#0e1019 99%);">
-      <div class="flex flex-wrap w-full max-w-screen-md mx-auto">
-        <div class="p-4 w-full sm:w-1/3 flex items-center justify-center">
-          <img src="assets/img/logos/susie-meyers-golf-logo.png" class="w-24 h-24" />
-        </div>
-        <div class="p-4 w-full sm:w-1/3 sm:order-3 flex items-center justify-center">
-          <img src="assets/img/logos/pga-of-america-logo.png" class="w-24 h-24" />
-        </div>
-        <div class="p-4 w-full sm:w-1/3 sm:order-2 flex items-center justify-center">
-          <img src="assets/img/logos/golf-top-100-logo.png" class="w-24" />
-        </div>
-      </div>
-      <div class="flex flex-wrap items-center justify-center my-8">
-        <div class="p-4 w-full max-w-screen-md mx-auto">
-          <h4 class="text-white text-2xl uppercase text-center font-600">
-            Play Point A Golf
-          </h4>
-          <div class="w-full text-center text-white mt-8 flex flex-wrap">
-            <div class="p-2 w-full md:w-1/3 flex justify-center">
-              <a href="/lessons" class="w-auto">
-                <div class="font-500 hover:bg-white hover:text-gray-700 px-4 py-2 border border-white rounded-full">
-                  Request a Golf Lesson
-                </div>
-              </a>
-            </div>
-            <div class="p-2 w-full md:w-1/3 flex justify-center">
-              <a href="/point-a-golf-book">
-                <div class="font-500 hover:bg-white hover:text-gray-700 px-4 py-2 border border-white rounded-full">
+              <div class="w-auto px-4 mt-8 w-full md:text-center">
+                <a
+                  href="/point-a-golf-book"
+                  class="bg-primary-red-500 border border-primary-red-500 shadow-lg rounded-xl text-white px-6 py-4 hover:bg-primary-red-700 hover:border-primary-red-700 hover:text-white focus:outline-none font-500 tracking-wider"
+                >
                   Point A Golf Book
-                </div>
-              </a>
-            </div>
-            <div class="p-2 w-full md:w-1/3 flex justify-center">
-              <a href="/point-a-golf">
-                <div class="font-500 hover:bg-white hover:text-gray-700 px-4 py-2 border border-white rounded-full">
-                  Point A Golf Philosophy
-                </div>
-              </a>
+                </a>
+              </div>
             </div>
           </div>
         </div>
+      </nav>
+      <div
+        class="bg-cover bg-top flex-grow"
+        style="background-image: url('assets/img/susie-meyers-golf-clinic.jpg');"
+      ></div>
+      <div class="bg-primary-red-500 py-8">
+        <h1
+          class="text-white text-3xl font-200 leading-tight max-w-screen-xl mx-auto px-4"
+        >
+          Golf Articles and <br />
+          <span class="font-600">Media</span>
+        </h1>
       </div>
-      <div class="flex flex-wrap">
-        <div class="text-white text-center font-600 text-lg w-full">&copy; Susie Meyers Golf <span id="year"></span></div>
-        <div class="mt-4 flex justify-center w-full">
-          <div class="p-4">
-            <a href="">
-              <img src="assets/icons/facebook.png" class="h-10 w-10" />
-            </a>
-          </div>
-          <div class="p-4">
-            <a href="https://www.instagram.com/susiemeyersgolf/" class="cursor-pointer">
-              <img src="assets/icons/instagram.png" class="h-10 w-10" />
-            </a>
-          </div>
-          <div class="p-4">
-            <a href="https://www.linkedin.com/in/susie-meyers-05942944">
-              <img src="assets/icons/linkedin.png" class="h-10 w-10" />
-            </a>
-          </div>
-        </div>
+    </header>
+    <section class="mt-16 max-w-screen-xl mx-auto">
+      <div class="bg-white px-4">
+        <h2 class="text-primary-red-500 text-2xl font-200 leading-tight">
+          Podcasts &amp; Radio Segments
+        </h2>
+        <h3 class="text-lg font-400 pt-4 leading-tight">
+          Susie is regularly featured on KBLUam.com. Check back here for
+          upcoming shows!
+        </h3>
       </div>
-    </div>
-  </footer>
-</body>
-<script>
-  document.getElementById("year").innerHTML = new Date().getFullYear();
-</script>
+    </section>
 
+    <section class="mt-8 max-w-screen-xl mx-auto">
+      <div class="flex flex-wrap w-full">
+        <a
+          href="http://www.blogtalkradio.com/back9report/2018/11/14/the-back-9-report"
+          target="_blank"
+          class="p-4 w-full sm:w-1/2 lg:w-1/3 flex"
+        >
+          <div class="w-full flex flex-wrap shadow-lg">
+            <div class="bg-white w-full">
+              <div
+                class="relative w-full bg-green-500"
+                style="padding-bottom:60%;"
+              >
+                <img
+                  src="assets/img/podcasts/back-9-report.png"
+                  class="object-cover absolute h-full w-full"
+                />
+              </div>
+              <div class="p-4">
+                <div class="flex items-center justify-between">
+                  <div>
+                    <span
+                      class="text-gray-500 uppercase tracking-wide font-200 text-sm"
+                      >November 13, 2018</span
+                    >
+                  </div>
+                  <div>
+                    <span
+                      class="font-200 text-sm text-primary-red-500 leading-none"
+                    >
+                      96 mins
+                    </span>
+                  </div>
+                </div>
+                <div>
+                  <p class="font-500 text-gray-900 text-xl leading-tight mt-2">
+                    The Back 9 Report
+                  </p>
+                </div>
+              </div>
+            </div>
+            <div class="pl-4 pb-4">
+              <div
+                class="border border-gray-500 hover:border-primary-red-500 hover:bg-primary-red-500 rounded-full flex items-center justify-center text-gray-500 h-12 w-12"
+              >
+                <div class="text-gray-500 hover:text-white">
+                  <svg
+                    xmlns="http://www.w3.org/2000/svg"
+                    width="24"
+                    height="24"
+                    class="pl-1 fill-current"
+                  >
+                    <defs>
+                      <clipPath id="a">
+                        <path d="M0 0h24v24H0z" />
+                      </clipPath>
+                    </defs>
+                    <path data-name="Path 6" d="M27 22L4.513 6.492" />
+                    <path
+                      data-name="play-button"
+                      d="M20.468 11.529L3.9.1a.572.572 0 00-.9.47v22.859a.571.571 0 00.9.47L20.468 12.47a.571.571 0 000-.941z"
+                    />
+                  </svg>
+                </div>
+              </div>
+            </div>
+          </div>
+        </a>
+
+        <a
+          href="http://www.blogtalkradio.com/womenofgolf/2017/10/10/women-of-golf--with-susie-meyers--top-100-teaching-in-america--part-2-1"
+          target="_blank"
+          class="p-4 w-full sm:w-1/2 lg:w-1/3 flex"
+        >
+          <div class="w-full flex flex-wrap shadow-lg">
+            <div class="bg-white w-full">
+              <div
+                class="relative w-full bg-green-500"
+                style="padding-bottom:60%;"
+              >
+                <img
+                  src="assets/img/podcasts/women-of-golf.png"
+                  class="object-cover absolute h-full w-full"
+                />
+              </div>
+              <div class="p-4">
+                <div class="flex items-center justify-between">
+                  <div>
+                    <span
+                      class="text-gray-500 uppercase tracking-wide font-200 text-sm"
+                      >October 10, 2017</span
+                    >
+                  </div>
+                  <div>
+                    <span
+                      class="font-200 text-sm text-primary-red-500 leading-none"
+                    >
+                      59 mins
+                    </span>
+                  </div>
+                </div>
+                <div>
+                  <p class="font-500 text-gray-900 text-xl leading-tight mt-2">
+                    Blog Talk Radio - Women of Golf
+                  </p>
+                </div>
+              </div>
+            </div>
+            <div class="pl-4 pb-4">
+              <div
+                class="border border-gray-500 hover:border-primary-red-500 hover:bg-primary-red-500 rounded-full flex items-center justify-center text-gray-500 h-12 w-12"
+              >
+                <div class="text-gray-500 hover:text-white">
+                  <svg
+                    xmlns="http://www.w3.org/2000/svg"
+                    width="24"
+                    height="24"
+                    class="pl-1 fill-current"
+                  >
+                    <defs>
+                      <clipPath id="a">
+                        <path d="M0 0h24v24H0z" />
+                      </clipPath>
+                    </defs>
+                    <path data-name="Path 6" d="M27 22L4.513 6.492" />
+                    <path
+                      data-name="play-button"
+                      d="M20.468 11.529L3.9.1a.572.572 0 00-.9.47v22.859a.571.571 0 00.9.47L20.468 12.47a.571.571 0 000-.941z"
+                    />
+                  </svg>
+                </div>
+              </div>
+            </div>
+          </div>
+        </a>
+
+        <a
+          href="http://www.themarkbishopshow.com/wp-content/uploads/2017/09/MB-09-16-17p.mp3?_=6"
+          target="_blank"
+          class="p-4 w-full sm:w-1/2 lg:w-1/3 flex"
+        >
+          <div class="w-full flex flex-wrap shadow-lg">
+            <div class="bg-white w-full">
+              <div
+                class="relative w-full bg-green-500"
+                style="padding-bottom:60%;"
+              >
+                <img
+                  src="assets/img/podcasts/mark-bishop-show.png"
+                  class="object-cover absolute h-full w-full"
+                />
+              </div>
+              <div class="p-4">
+                <div class="flex items-center justify-between">
+                  <div>
+                    <span
+                      class="text-gray-500 uppercase tracking-wide font-200 text-sm"
+                      >September 16, 2017</span
+                    >
+                  </div>
+                  <div>
+                    <span
+                      class="font-200 text-sm text-primary-red-500 leading-none"
+                    >
+                      56 mins
+                    </span>
+                  </div>
+                </div>
+                <div>
+                  <p class="font-500 text-gray-900 text-xl leading-tight mt-2">
+                    The Mark Bishop Show
+                  </p>
+                </div>
+              </div>
+            </div>
+            <div class="pl-4 pb-4">
+              <div
+                class="border border-gray-500 hover:border-primary-red-500 hover:bg-primary-red-500 rounded-full flex items-center justify-center text-gray-500 h-12 w-12"
+              >
+                <div class="text-gray-500 hover:text-white">
+                  <svg
+                    xmlns="http://www.w3.org/2000/svg"
+                    width="24"
+                    height="24"
+                    class="pl-1 fill-current"
+                  >
+                    <defs>
+                      <clipPath id="a">
+                        <path d="M0 0h24v24H0z" />
+                      </clipPath>
+                    </defs>
+                    <path data-name="Path 6" d="M27 22L4.513 6.492" />
+                    <path
+                      data-name="play-button"
+                      d="M20.468 11.529L3.9.1a.572.572 0 00-.9.47v22.859a.571.571 0 00.9.47L20.468 12.47a.571.571 0 000-.941z"
+                    />
+                  </svg>
+                </div>
+              </div>
+            </div>
+          </div>
+        </a>
+
+        <a
+          href="https://www.blubrry.com/coachingmindspodcast/21801454/episode-8-susie-meyers-golf-magazine-top-100-teacher"
+          target="_blank"
+          class="p-4 w-full sm:w-1/2 lg:w-1/3 flex"
+        >
+          <div class="w-full flex flex-wrap shadow-lg">
+            <div class="bg-white w-full">
+              <div
+                class="relative w-full bg-green-500"
+                style="padding-bottom:60%;"
+              >
+                <img
+                  src="assets/img/podcasts/coaching-minds.png"
+                  class="object-cover absolute h-full w-full"
+                />
+              </div>
+              <div class="p-4">
+                <div class="flex items-center justify-between">
+                  <div>
+                    <span
+                      class="text-gray-500 uppercase tracking-wide font-200 text-sm"
+                      >March 13, 2017</span
+                    >
+                  </div>
+                  <div>
+                    <span
+                      class="font-200 text-sm text-primary-red-500 leading-none"
+                    >
+                      48 mins
+                    </span>
+                  </div>
+                </div>
+                <div>
+                  <p class="font-500 text-gray-900 text-xl leading-tight mt-2">
+                    Coaching Minds with Justin Lewis
+                  </p>
+                </div>
+              </div>
+            </div>
+            <div class="pl-4 pb-4">
+              <div
+                class="border border-gray-500 hover:border-primary-red-500 hover:bg-primary-red-500 rounded-full flex items-center justify-center text-gray-500 h-12 w-12"
+              >
+                <div class="text-gray-500 hover:text-white">
+                  <svg
+                    xmlns="http://www.w3.org/2000/svg"
+                    width="24"
+                    height="24"
+                    class="pl-1 fill-current"
+                  >
+                    <defs>
+                      <clipPath id="a">
+                        <path d="M0 0h24v24H0z" />
+                      </clipPath>
+                    </defs>
+                    <path data-name="Path 6" d="M27 22L4.513 6.492" />
+                    <path
+                      data-name="play-button"
+                      d="M20.468 11.529L3.9.1a.572.572 0 00-.9.47v22.859a.571.571 0 00.9.47L20.468 12.47a.571.571 0 000-.941z"
+                    />
+                  </svg>
+                </div>
+              </div>
+            </div>
+          </div>
+        </a>
+      </div>
+    </section>
+
+    <section class="mt-16 max-w-screen-xl mx-auto">
+      <div class="px-4">
+        <h2 class="text-primary-red-500 text-2xl font-200 leading-tight">
+          Articles &amp; Editorials
+        </h2>
+        <h3 class="text-lg font-400 pt-4 leading-tight">
+          Susie is mentioned in a variety of golf publications around the
+          country.
+        </h3>
+      </div>
+      <div class="flex flex-wrap mt-8">
+        <div class="p-4 w-full md:w-1/2 flex">
+          <div class="w-full">
+            <div class="border-b border-gray-200 pb-4">
+              <a
+                href="https://www.linkedin.com/pulse/leadership-lessons-learned-from-my-interview-susie-meyers-lewis?published=t"
+              >
+                <h4
+                  class="text-md leading-tight text-gray-900 font-500 hover:underline hover:text-primary-red-500"
+                >
+                  Leadership Lessons Learned From My Interview With Susie Meyers
+                </h4>
+              </a>
+            </div>
+            <div class="flex items-center mt-2">
+              <span
+                class="text-sm text-gray-500 font-200 leading-none uppercase"
+              >
+                march 16, 2017</span
+              >
+              <span
+                class="text-sm text-primary-red-500 font-200 leading-none tracking-wide uppercase ml-4"
+              >
+                linkedin.com</span
+              >
+            </div>
+          </div>
+        </div>
+        <div class="p-4 w-full md:w-1/2 flex">
+          <div class="w-full">
+            <div class="border-b border-gray-200 pb-4">
+              <a
+                href="http://tucson.com/sports/greghansen/hansen-positive-approach-makes-meyers-one-of-america-s-best/article_d98f1fd5-c6a4-589f-8218-641f7f8c3a35.html"
+              >
+                <h4
+                  class="text-md leading-tight text-gray-900 font-500 hover:underline hover:text-primary-red-500"
+                >
+                  Positive Approach Makes Meyers One Of America’s Best Golf
+                  Coaches
+                </h4>
+              </a>
+            </div>
+            <div class="flex items-center mt-2">
+              <span
+                class="text-sm text-gray-500 font-200 leading-none uppercase"
+              >
+                december 21, 2016</span
+              >
+              <span
+                class="text-sm text-primary-red-500 font-200 leading-none tracking-wide uppercase ml-4"
+              >
+                tucson.com</span
+              >
+            </div>
+          </div>
+        </div>
+        <div class="p-4 w-full md:w-1/2 flex">
+          <div class="w-full">
+            <div class="border-b border-gray-200 pb-4">
+              <a
+                href="http://www.golfdigest.com/story/derek-ernsts-less-traveled-road-to-pga-tour-success"
+              >
+                <h4
+                  class="text-md leading-tight text-gray-900 font-500 hover:underline hover:text-primary-red-500"
+                >
+                  Derek Ernst’s Less-Traveled Road To PGA Tour Success
+                </h4>
+              </a>
+            </div>
+            <div class="flex items-center mt-2">
+              <span
+                class="text-sm text-gray-500 font-200 leading-none uppercase"
+              >
+                may 6, 2013</span
+              >
+              <span
+                class="text-sm text-primary-red-500 font-200 leading-none tracking-wide uppercase ml-4"
+              >
+                golf digest</span
+              >
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="mt-16">
+      <div class="bg-primary-red-600 py-16">
+        <h2 class="text-white text-3xl font-200 text-center leading-tight">
+          Learn How to<br />
+          <span class="font-600">Play Point A Golf</span>
+        </h2>
+        <div class="flex flex-wrap justify-center mt-8">
+          <div class="w-auto px-2">
+            <button
+              class="bg-white border-2 border-white rounded-xl shadow-lg text-primary-red-600 px-4 py-2 hover:bg-primary-red-700 hover:border-primary-red-700 hover:text-white focus:outline-none font-500"
+            >
+              <a href="/lessons">Request A Lesson</a>
+            </button>
+          </div>
+          <div class="w-auto px-2">
+            <button
+              class="bg-transparent border-2 border-white rounded-xl shadow-lg text-white px-4 py-2 hover:bg-primary-red-700 hover:border-primary-red-700 hover:text-white focus:outline-none font-500"
+            >
+              <a href="/point-a-golf-book">Point A Golf Book</a>
+            </button>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <footer>
+      <div
+        class="py-16"
+        style="background: linear-gradient(to bottom, #1a202f 11%,#0e1019 99%);"
+      >
+        <div class="flex flex-wrap w-full max-w-screen-md mx-auto">
+          <div class="p-4 w-full sm:w-1/3 flex items-center justify-center">
+            <img
+              src="assets/img/logos/susie-meyers-golf-logo.png"
+              class="w-24 h-24"
+            />
+          </div>
+          <div
+            class="p-4 w-full sm:w-1/3 sm:order-3 flex items-center justify-center"
+          >
+            <img
+              src="assets/img/logos/pga-of-america-logo.png"
+              class="w-24 h-24"
+            />
+          </div>
+          <div
+            class="p-4 w-full sm:w-1/3 sm:order-2 flex items-center justify-center"
+          >
+            <img src="assets/img/logos/golf-top-100-logo.png" class="w-24" />
+          </div>
+        </div>
+        <div class="flex flex-wrap items-center justify-center my-8">
+          <div class="p-4 w-full max-w-screen-md mx-auto">
+            <h4 class="text-white text-2xl uppercase text-center font-600">
+              Play Point A Golf
+            </h4>
+            <div class="w-full text-center text-white mt-8 flex flex-wrap">
+              <div class="p-2 w-full md:w-1/3 flex justify-center">
+                <a href="/lessons" class="w-auto">
+                  <div
+                    class="font-500 hover:bg-white hover:text-gray-700 px-4 py-2 border border-white rounded-full"
+                  >
+                    Request a Golf Lesson
+                  </div>
+                </a>
+              </div>
+              <div class="p-2 w-full md:w-1/3 flex justify-center">
+                <a href="/point-a-golf-book">
+                  <div
+                    class="font-500 hover:bg-white hover:text-gray-700 px-4 py-2 border border-white rounded-full"
+                  >
+                    Point A Golf Book
+                  </div>
+                </a>
+              </div>
+              <div class="p-2 w-full md:w-1/3 flex justify-center">
+                <a href="/point-a-golf">
+                  <div
+                    class="font-500 hover:bg-white hover:text-gray-700 px-4 py-2 border border-white rounded-full"
+                  >
+                    Point A Golf Philosophy
+                  </div>
+                </a>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="flex flex-wrap">
+          <div class="text-white text-center font-600 text-lg w-full">
+            &copy; Susie Meyers Golf <span id="year"></span>
+          </div>
+          <div class="mt-4 flex justify-center w-full">
+            <div class="p-4">
+              <a href="">
+                <img src="assets/icons/facebook.png" class="h-10 w-10" />
+              </a>
+            </div>
+            <div class="p-4">
+              <a
+                href="https://www.instagram.com/susiemeyersgolf/"
+                class="cursor-pointer"
+              >
+                <img src="assets/icons/instagram.png" class="h-10 w-10" />
+              </a>
+            </div>
+            <div class="p-4">
+              <a href="https://www.linkedin.com/in/susie-meyers-05942944">
+                <img src="assets/icons/linkedin.png" class="h-10 w-10" />
+              </a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </footer>
+  </body>
+  <script>
+    document.getElementById("year").innerHTML = new Date().getFullYear();
+  </script>
 </html>

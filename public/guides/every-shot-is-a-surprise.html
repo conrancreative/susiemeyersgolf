@@ -1,307 +1,509 @@
 <!DOCTYPE html>
 <html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <title>
+      Every shot is a surprise | Point A Golf Tips from Susie Meyers
+    </title>
+    <meta
+      name="description"
+      content="Playing golf is best played one stroke at a time, not thinking about your future shots. Thinking ahead changes the way you think about right now."
+    />
+    <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png" />
+    <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png" />
+    <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png" />
+    <link rel="stylesheet" href="../build/css/tailwind.css" />
+  </head>
 
-<head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <meta http-equiv="X-UA-Compatible" content="ie=edge" />
-  <title>
-    Every shot is a surprise | Point A Golf Tips from Susie Meyers
-  </title>
-  <meta name="description" content="Playing golf is best played one stroke at a time, not thinking about your future shots. Thinking ahead changes the way you think about right now.">
-  <link rel="stylesheet" href="../build/css/tailwind.css" />
-</head>
-
-<body class="">
-  <script src="../assets/js/scripts.js"></script>
-  <header class="w-full flex flex-col">
-    <nav class="z-50 relative">
-      <div class="h-16 bg-white flex items-center px-4 shadow">
-        <div class="w-1/3">
-          <button onclick="navToggle()" class="uppercase font-600 text-primary-red-500 leading-none focus:outline-none">
+  <body class="">
+    <script src="../assets/js/scripts.js"></script>
+    <header class="w-full flex flex-col">
+      <nav class="z-50 relative">
+        <div class="h-16 bg-white flex items-center px-4 shadow">
+          <div class="w-1/3">
+            <button
+              onclick="navToggle()"
+              class="uppercase font-600 text-primary-red-500 leading-none focus:outline-none"
+            >
+              <div class="text-primary-red-500 font-600 pr-2 flex items-center">
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  width="20"
+                  height="12"
+                  class="fill-current mr-2"
+                >
+                  <g fill="none" stroke="#9d201a" stroke-width="2">
+                    <path data-name="Line 1" d="M0 1h20" />
+                    <path data-name="Line 2" d="M0 6h20" />
+                    <path data-name="Line 3" d="M0 11h20" />
+                  </g>
+                </svg>
+                <span class="pl-2">MENU</span>
+              </div>
+            </button>
+          </div>
+          <div class="w-1/3 flex justify-center">
+            <a href="/">
+              <img
+                src="../assets/img/logos/susie-meyers-golf-logo.png"
+                class="w-24 h-24 mt-16"
+              />
+            </a>
+          </div>
+          <div class="w-1/3 flex justify-end">
+            <a
+              href="/lessons"
+              class="uppercase font-500 text-primary-red-500 font-600 leading-none"
+            >
+              LESSONS
+            </a>
+          </div>
+        </div>
+        <div
+          class="w-full absolute h-screen top-0 left-0 z-0 bg-white hidden"
+          id="nav"
+        >
+          <button
+            onclick="navToggle()"
+            class="h-16 px-4 uppercase font-600 text-primary-red-500 leading-none focus:outline-none"
+          >
             <div class="text-primary-red-500 font-600 pr-2 flex items-center">
-              <svg xmlns="http://www.w3.org/2000/svg" width="20" height="12" class="fill-current mr-2">
-                <g fill="none" stroke="#9d201a" stroke-width="2">
-                  <path data-name="Line 1" d="M0 1h20" />
-                  <path data-name="Line 2" d="M0 6h20" />
-                  <path data-name="Line 3" d="M0 11h20" />
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                width="20"
+                height="12"
+                class="fill-current"
+              >
+                <g>
+                  <path
+                    data-name="Rectangle 28"
+                    d="M5.414 0l10.607 10.607-1.415 1.414L4 1.414z"
+                  />
+                  <path
+                    data-name="Rectangle 29"
+                    d="M4 10.607L14.607 0l1.414 1.415L5.414 12.02z"
+                  />
                 </g>
               </svg>
-              <span class="pl-2">MENU</span>
+              <span class="pl-2">CLOSE</span>
             </div>
           </button>
-        </div>
-        <div class="w-1/3 flex justify-center">
-          <a href="/">
-            <img src="../assets/img/logos/susie-meyers-golf-logo.png" class="w-24 h-24 mt-16" />
-          </a>
-        </div>
-        <div class="w-1/3 flex justify-end">
-          <a href="/lessons" class="uppercase font-500 text-primary-red-500 font-600 leading-none">
-            LESSONS
-          </a>
-        </div>
-      </div>
-      <div class="w-full absolute h-screen top-0 left-0 z-0 bg-white hidden" id="nav">
-        <button onclick="navToggle()" class="h-16 px-4 uppercase font-600 text-primary-red-500 leading-none focus:outline-none">
-          <div class="text-primary-red-500 font-600 pr-2 flex items-center">
-            <svg xmlns="http://www.w3.org/2000/svg" width="20" height="12" class='fill-current'>
-              <g>
-                <path data-name="Rectangle 28" d="M5.414 0l10.607 10.607-1.415 1.414L4 1.414z" />
-                <path data-name="Rectangle 29" d="M4 10.607L14.607 0l1.414 1.415L5.414 12.02z" />
-              </g>
-            </svg>
-            <span class="pl-2">CLOSE</span>
-          </div>
-        </button>
-        <div class="bg-white flex flex-wrap">
-          <div class="mt-4 px-4 w-full md:w-1/2">
-            <a href="/point-a-golf" class="w-full pt-6 pb-1 flex text-xl md:text-2xl lg:text-3xl font-300 tracking-wide leading-none border-b border-gray-200 hover:font-500 hover:text-primary-red-500">Point A Golf</a>
-            <a href="/lessons" class="w-full pt-6 pb-1 flex text-xl md:text-2xl lg:text-3xl font-300 tracking-wide leading-none border-b border-gray-200 hover:font-500 hover:text-primary-red-500">Golf Lessons</a>
-            <a href="/media" class="w-full pt-6 pb-1 flex text-xl md:text-2xl lg:text-3xl font-300 tracking-wide leading-none border-b border-gray-200 hover:font-500 hover:text-primary-red-500">Articles & Media</a>
-            <a href="/contact" class="w-full pt-6 pb-1 flex text-xl md:text-2xl lg:text-3xl font-300 tracking-wide leading-none border-b border-gray-200 hover:font-500 hover:text-primary-red-500">Contact</a>
-            <a href="/point-a-golf-book" class="w-full pt-6 pb-1 flex md:hidden text-xl md:text-2xl lg:text-3xl font-300 tracking-wide leading-none border-b border-gray-200 hover:font-500 hover:text-primary-red-500">Golf From Point A Book</a>
-          </div>
-          <div class="w-full md:w-1/2 mt-8 hidden md:flex flex-wrap md:justify-center">
-            <div class="px-4 w-48 md:w-56 lg:w-64 flex">
-              <img src="../assets/img/book/book-nav.png">
+          <div class="bg-white flex flex-wrap">
+            <div class="mt-4 px-4 w-full md:w-1/2">
+              <a
+                href="/point-a-golf"
+                class="w-full pt-6 pb-1 flex text-xl md:text-2xl lg:text-3xl font-300 tracking-wide leading-none border-b border-gray-200 hover:font-500 hover:text-primary-red-500"
+                >Point A Golf</a
+              >
+              <a
+                href="/lessons"
+                class="w-full pt-6 pb-1 flex text-xl md:text-2xl lg:text-3xl font-300 tracking-wide leading-none border-b border-gray-200 hover:font-500 hover:text-primary-red-500"
+                >Golf Lessons</a
+              >
+              <a
+                href="/media"
+                class="w-full pt-6 pb-1 flex text-xl md:text-2xl lg:text-3xl font-300 tracking-wide leading-none border-b border-gray-200 hover:font-500 hover:text-primary-red-500"
+                >Articles & Media</a
+              >
+              <a
+                href="/contact"
+                class="w-full pt-6 pb-1 flex text-xl md:text-2xl lg:text-3xl font-300 tracking-wide leading-none border-b border-gray-200 hover:font-500 hover:text-primary-red-500"
+                >Contact</a
+              >
+              <a
+                href="/point-a-golf-book"
+                class="w-full pt-6 pb-1 flex md:hidden text-xl md:text-2xl lg:text-3xl font-300 tracking-wide leading-none border-b border-gray-200 hover:font-500 hover:text-primary-red-500"
+                >Golf From Point A Book</a
+              >
             </div>
-            <div class="w-auto px-4 mt-8 w-full md:text-center">
-              <a href="/point-a-golf-book" class="bg-primary-red-500 border border-primary-red-500 shadow-lg rounded-xl text-white px-6 py-4 hover:bg-primary-red-700 hover:border-primary-red-700 hover:text-white focus:outline-none font-500 tracking-wider">
-                Point A Golf Book
-              </a>
-            </div>
-          </div>
-        </div>
-      </div>
-    </nav>
-    <div class="bg-primary-red-500 flex items-center w-full">
-      <div class="w-full max-w-screen-xl mx-auto px-4 py-24">
-        <span class="text-xs font-500 tracking-wide text-white">POINT A GOLF</span>
-        <h1 class="text-white text-3xl md:text-4xl font-200 leading-tight text-left capitalize mt-2">
-          Every Shot Is A Surprise
-        </h1>
-      </div>
-    </div>
-  </header>
-
-  <section class="p-4 max-w-screen-xl mx-auto">
-    <div>
-      <div class="text-primary-red-300 text-sm">
-        <span class="text-gray-500">
-          <a href="/" class="hover:underline">Home</a>
-        </span>
-        /
-        <span class="text-gray-500">
-          <a href="/point-a-golf" class="hover:underline">Point A Golf</a>
-        </span>
-        /
-        <span class="text-gray-600 font-500">
-          Every shot is a surprise
-        </span>
-      </div>
-    </div>
-  </section>
-
-  <section class="p-4 max-w-screen-xl mx-auto flex flex-wrap">
-    <div class="w-full lg:w-3/4 lg:pr-8">
-      <h3 class="text-lg font-500">
-        Playing golf is best played one stroke at a time, not thinking about your future shots. Thinking ahead changes the way you think about right now.
-      </h3>
-      <p class="text-lg leading-relaxed font-300 mt-8">
-        A round of golf is a four-hour stretch of time that travels over 18 separate holes that will be pleasant, unpleasant, trying, enjoyable, challenging, focused, stressful, and sometimes frustrating and disappointing. What we do know when we start is that things will happen that are unexpected both good and not so good. What we also know is that we do not know the outcome when we start. The round of golf holds surprise after surprise, sometimes very pleasing and gratifying surprises and sometimes crushing and infuriating. The great thing about this game is that you have to play the game to find out what will happen. You do not know the future before it happens, no one does.
-      </p>
-      <div class="mt-8">
-        <figure>
-          <img src="../assets/img/guides/blog-image_point-a-golf.jpg" />
-          <figcaption class="text-gray-500 uppercase italic text-sm font-400 mt-2">
-            Caption text for the image needed.
-          </figcaption>
-        </figure>
-      </div>
-      <h4 class="text-sm font-600 text-primary-red-500 uppercase leading-tight tracking-wide mt-8">
-        Play golf one stroke at a time
-      </h4>
-      <p class="text-lg leading-relaxed font-300 mt-4">
-        Playing golf is best played one stroke at a time, not thinking about your future shots. Thinking ahead changes the way you think about right now. If you are trying to figure out what score is needed or how you are going to do something in the future, your energy for the shot at hand is altered. The simple act of “trying” to make something happen versus just allowing something to happen changes the mind to muscle connections. The golf strokes are varied from when you practiced without “trying” to make something happen in the future. In practice you allow your stroke to happen and don’t have the emotional attachment you have to the ball and where it lands because you have another chance with the next ball and there are no scorecards in practice!
-      </p>
-      <h4 class="text-sm font-600 text-primary-red-500 uppercase leading-tight tracking-wide mt-8">
-        Have no expectations
-      </h4>
-      <p class="text-lg leading-relaxed font-300 mt-4">
-        Your thinking changes your body, it can be relaxed and ready for each shot or it can be fearful and worried about the future and where the ball is going and thus the body is tight or just simply out of rhythm for the shot at hand.
-      </p>
-      <p class="text-lg leading-relaxed font-300 mt-4">
-        An expectation is a belief centered on the future. High performance athletes can tend to be perfectionists that focus on results and hold very high expectations for themselves. The problem with this is that their standards are so high that if they make a mistake they criticize themselves ruthlessly. There tends to be a focus on the negative, “I stink”, instead of “ I can do this”. Unfortunately things tend to go down hill from this point.
-      </p>
-      <p class="text-lg leading-relaxed font-300 mt-4">
-        Do you get easily frustrated when you make a mistake? Do you expect more out of yourself than what you are getting? Are your standards set very high thinking that you do not want to live in a world of mediocrity? Are you overly critical of yourself and your performance? If you believe this is the way to get your best performance you may want to rethink your approach.
-      </p>
-      <h4 class="text-sm font-600 text-primary-red-500 uppercase leading-tight tracking-wide mt-8">
-        You can’t predict the future
-      </h4>
-      <p class="text-lg leading-relaxed font-300 mt-4">
-        Every shot is a surprise! Really, it is. You cannot know the future and a golf stroke has so many moving parts and a thought process that can change your golf stroke in an instant that the future for your ball is a surprise. Many times it can be a pleasant surprise but before you make your stroke, you do not know the outcome. High standards while playing can create high criticism if the shot does not go as planned.
-      </p>
-      <p class="text-lg leading-relaxed font-300 mt-4">
-        Expectations are an extra burden you put upon yourself to meet a predetermined standard that you deem as “good”. You either reach your standard (a good day) or you don’t (a bad day).
-      </p>
-      <h4 class="text-sm font-600 text-primary-red-500 uppercase leading-tight tracking-wide mt-8">
-        Start at Point A
-      </h4>
-      <p class="text-lg leading-relaxed font-300 mt-4">
-        Point A is playing knowing that each shot is a surprise and each shot will set you up for a new situation that requires your attention and 100% energy to do your best. You do not try to predict the outcome, you play only one stroke at a time giving it your best effort and accept what happens, both good and bad, and move on to the next shot to give 100%.
-      </p>
-      <h4 class="text-sm font-600 text-primary-red-500 uppercase leading-tight tracking-wide mt-8">
-        A real life scenario
-      </h4>
-      <p class="text-lg leading-relaxed font-300 mt-4">
-        A high school boy, Jacob, was playing with another boy, Tony, who was ranting and raving after each shot. Tony was always upset after each shot. It just wasn’t good enough, the ball faded instead of turning left like he saw in his mind. The putt stopped on the front edge of the hole instead of falling in, the chip was 6 feet short instead of nestling right up to the hole, all to Tony’s chagrin and now Tony was complaining and telling himself how bad he was. Jacob said to Tony on about the 3rd hole, “I used to do what you are doing and then I realized it really wasn’t helping and I trained myself to accept the outcome and move on to the next shot which I could then be more prepared for. It wasn’t that I didn’t try; I just stopped wasting my energy on what I couldn’t control. Now when I get off to a bad start I just keep trying to figure out how to stay calm and allow my game to come around.”
-      </p>
-      <p class="text-lg leading-relaxed font-300 mt-4">
-        A few months later, Jacob was playing with some college players and a professional and he found himself 2 over par after 4 holes. Jacob really wanted to play well with this better competition and he was excited to play with better players. He just kept plugging along and a putt dropped for birdie, then out of the blue he hit a great 3 wood onto the green on a par 5 and made the putt for an eagle, just when he least expected it he was back in the game and finished the round 4 under par and very much in control of his game. The others did not fair so well, criticizing themselves after a poor shot, questioning their strokes and feeling lost and disappointed by the end of the round. When asked by the professional if it was difficult to play from Point A, Jacob replied, “At first it was but I’ve been doing it for so long, there is no other way to play.”
-
-      </p>
-      <p class="text-lg leading-relaxed font-300 mt-4">
-        Every shot is a surprise and if you are looking for the good in each shot you can find it and if you are looking for the bad in each shot you are sure to find that also. You will create a positive or negative energy about your game just from your perspective of your golf shot. When you decide to play from Point A to Point A allowing yourself to be 100% present, positive and prepared you can make any game a productive and beneficial experience.
-      </p>
-    </div>
-    <div class="mt-16 w-full lg:w-1/4 lg:mt-0">
-      <div class="bg-white shadow p-4">
-        <h3 class="text-lg text-primary-red-600 font-400">
-          More Point A Golf Guides
-        </h3>
-        <ul class="list-none text-gray-600 mt-4">
-          <li class="mt-4 first:mt-0 leading-none flex">
-            <div class="h-4 w-1 bg-primary-red-500"></div>
-            <a href="../guides/forward-and-away-thinking" class="hover:underline pl-2">
-              Forward And Away Thinking
-            </a>
-          </li>
-          <li class="mt-4 first:mt-0 leading-none flex">
-            <div class="h-4 w-1 bg-primary-red-500"></div>
-            <a href="../guides/how-to-apply-backward-thinking" class="hover:underline pl-2">
-              How To Apply Backwards Thinking
-            </a>
-          </li>
-          <li class="mt-4 first:mt-0 leading-none flex">
-            <div class="h-4 w-1 bg-primary-red-500"></div>
-            <a href="../guides/meditation-and-golf" class="hover:underline pl-2">
-              Meditation And Golf
-            </a>
-          </li>
-          <li class="mt-4 first:mt-0 leading-none flex">
-            <div class="h-4 w-1 bg-primary-red-500"></div>
-            <a href="../guides/multitasking-and-the-golf-swing" class="hover:underline pl-2">
-              Multitasking And The Golf Swing
-            </a>
-          </li>
-          <li class="mt-4 first:mt-0 leading-none flex">
-            <div class="h-4 w-1 bg-primary-red-500"></div>
-            <a href="../guides/preparing-when-you-dont-have-time" class="hover:underline pl-2">
-              Preparing When You Don't Have Time
-            </a>
-          </li>
-          <li class="mt-4 first:mt-0 leading-none flex">
-            <div class="h-4 w-1 bg-primary-red-500"></div>
-            <a href="../guides/the-art-of-loving-yourself" class="hover:underline pl-2">
-              The Art of Loving Yourself
-            </a>
-          </li>
-        </ul>
-      </div>
-    </div>
-  </section>
-
-  <section class="mt-16">
-    <div class="bg-primary-red-600 py-16">
-      <h2 class="text-white text-3xl font-200 text-center leading-tight">
-        Learn How to<br />
-        <span class="font-600">Play Point A Golf</span>
-      </h2>
-      <div class="flex flex-wrap justify-center mt-8">
-        <div class="w-auto px-2">
-          <button class="bg-white border-2 border-white rounded-xl shadow-lg text-primary-red-600 px-4 py-2 hover:bg-primary-red-700 hover:border-primary-red-700 hover:text-white focus:outline-none font-500">
-            <a href="/lessons">Request A Lesson</a>
-          </button>
-        </div>
-        <div class="w-auto px-2">
-          <button class="bg-transparent border-2 border-white rounded-xl shadow-lg text-white px-4 py-2 hover:bg-primary-red-700 hover:border-primary-red-700 hover:text-white focus:outline-none font-500">
-            <a href="/point-a-golf-book">Point A Golf Book</a>
-          </button>
-        </div>
-      </div>
-    </div>
-  </section>
-
-  <footer>
-    <div class="py-16" style="background: linear-gradient(to bottom, #1a202f 11%,#0e1019 99%);">
-      <div class="flex flex-wrap w-full max-w-screen-md mx-auto">
-        <div class="p-4 w-full sm:w-1/3 flex items-center justify-center">
-          <img src="../assets/img/logos/susie-meyers-golf-logo.png" class="w-24 h-24" />
-        </div>
-        <div class="p-4 w-full sm:w-1/3 sm:order-3 flex items-center justify-center">
-          <img src="../assets/img/logos/pga-of-america-logo.png" class="w-24 h-24" />
-        </div>
-        <div class="p-4 w-full sm:w-1/3 sm:order-2 flex items-center justify-center">
-          <img src="../assets/img/logos/golf-top-100-logo.png" class="w-24" />
-        </div>
-      </div>
-      <div class="flex flex-wrap items-center justify-center my-8">
-        <div class="p-4 w-full max-w-screen-md mx-auto">
-          <h4 class="text-white text-2xl uppercase text-center font-600">
-            Play Point A Golf
-          </h4>
-          <div class="w-full text-center text-white mt-8 flex flex-wrap">
-            <div class="p-2 w-full md:w-1/3 flex justify-center">
-              <a href="" class="w-auto">
-                <div class="font-500 hover:bg-white hover:text-gray-700 px-4 py-2 border border-white rounded-full">
-                  Request a Golf Lesson
-                </div>
-              </a>
-            </div>
-            <div class="p-2 w-full md:w-1/3 flex justify-center">
-              <a href="/lessons">
-                <div class="font-500 hover:bg-white hover:text-gray-700 px-4 py-2 border border-white rounded-full">
+            <div
+              class="w-full md:w-1/2 mt-8 hidden md:flex flex-wrap md:justify-center"
+            >
+              <div class="px-4 w-48 md:w-56 lg:w-64 flex">
+                <img src="../assets/img/book/book-nav.png" />
+              </div>
+              <div class="w-auto px-4 mt-8 w-full md:text-center">
+                <a
+                  href="/point-a-golf-book"
+                  class="bg-primary-red-500 border border-primary-red-500 shadow-lg rounded-xl text-white px-6 py-4 hover:bg-primary-red-700 hover:border-primary-red-700 hover:text-white focus:outline-none font-500 tracking-wider"
+                >
                   Point A Golf Book
-                </div>
-              </a>
-            </div>
-            <div class="p-2 w-full md:w-1/3 flex justify-center">
-              <a href="/point-a-golf-book">
-                <div class="font-500 hover:bg-white hover:text-gray-700 px-4 py-2 border border-white rounded-full">
-                  Point A Golf Philosophy
-                </div>
-              </a>
+                </a>
+              </div>
             </div>
           </div>
         </div>
-      </div>
-      <div class="flex flex-wrap">
-        <div class="text-white text-center font-600 text-lg w-full">&copy; Susie Meyers Golf <span id="year"></span></div>
-        <div class="mt-4 flex justify-center w-full">
-          <div class="p-4">
-            <a href="">
-              <img src="../assets/icons/facebook.png" class="h-10 w-10" />
-            </a>
-          </div>
-          <div class="p-4">
-            <a href="https://www.instagram.com/susiemeyersgolf/" class="cursor-pointer">
-              <img src="../assets/icons/instagram.png" class="h-10 w-10" />
-            </a>
-          </div>
-          <div class="p-4">
-            <a href="https://www.linkedin.com/in/susie-meyers-05942944">
-              <img src="../assets/icons/linkedin.png" class="h-10 w-10" />
-            </a>
-          </div>
+      </nav>
+      <div class="bg-primary-red-500 flex items-center w-full">
+        <div class="w-full max-w-screen-xl mx-auto px-4 py-24">
+          <span class="text-xs font-500 tracking-wide text-white"
+            >POINT A GOLF</span
+          >
+          <h1
+            class="text-white text-3xl md:text-4xl font-200 leading-tight text-left capitalize mt-2"
+          >
+            Every Shot Is A Surprise
+          </h1>
         </div>
       </div>
-    </div>
-  </footer>
-</body>
-<script>
-  document.getElementById("year").innerHTML = new Date().getFullYear();
-</script>
+    </header>
 
+    <section class="p-4 max-w-screen-xl mx-auto">
+      <div>
+        <div class="text-primary-red-300 text-sm">
+          <span class="text-gray-500">
+            <a href="/" class="hover:underline">Home</a>
+          </span>
+          /
+          <span class="text-gray-500">
+            <a href="/point-a-golf" class="hover:underline">Point A Golf</a>
+          </span>
+          /
+          <span class="text-gray-600 font-500">
+            Every shot is a surprise
+          </span>
+        </div>
+      </div>
+    </section>
+
+    <section class="p-4 max-w-screen-xl mx-auto flex flex-wrap">
+      <div class="w-full lg:w-3/4 lg:pr-8">
+        <h3 class="text-lg font-500">
+          Playing golf is best played one stroke at a time, not thinking about
+          your future shots. Thinking ahead changes the way you think about
+          right now.
+        </h3>
+        <p class="text-lg leading-relaxed font-300 mt-8">
+          A round of golf is a four-hour stretch of time that travels over 18
+          separate holes that will be pleasant, unpleasant, trying, enjoyable,
+          challenging, focused, stressful, and sometimes frustrating and
+          disappointing. What we do know when we start is that things will
+          happen that are unexpected both good and not so good. What we also
+          know is that we do not know the outcome when we start. The round of
+          golf holds surprise after surprise, sometimes very pleasing and
+          gratifying surprises and sometimes crushing and infuriating. The great
+          thing about this game is that you have to play the game to find out
+          what will happen. You do not know the future before it happens, no one
+          does.
+        </p>
+        <div class="mt-8">
+          <figure>
+            <img src="../assets/img/guides/blog-image_point-a-golf.jpg" />
+            <figcaption
+              class="text-gray-500 uppercase italic text-sm font-400 mt-2"
+            >
+              Caption text for the image needed.
+            </figcaption>
+          </figure>
+        </div>
+        <h4
+          class="text-sm font-600 text-primary-red-500 uppercase leading-tight tracking-wide mt-8"
+        >
+          Play golf one stroke at a time
+        </h4>
+        <p class="text-lg leading-relaxed font-300 mt-4">
+          Playing golf is best played one stroke at a time, not thinking about
+          your future shots. Thinking ahead changes the way you think about
+          right now. If you are trying to figure out what score is needed or how
+          you are going to do something in the future, your energy for the shot
+          at hand is altered. The simple act of “trying” to make something
+          happen versus just allowing something to happen changes the mind to
+          muscle connections. The golf strokes are varied from when you
+          practiced without “trying” to make something happen in the future. In
+          practice you allow your stroke to happen and don’t have the emotional
+          attachment you have to the ball and where it lands because you have
+          another chance with the next ball and there are no scorecards in
+          practice!
+        </p>
+        <h4
+          class="text-sm font-600 text-primary-red-500 uppercase leading-tight tracking-wide mt-8"
+        >
+          Have no expectations
+        </h4>
+        <p class="text-lg leading-relaxed font-300 mt-4">
+          Your thinking changes your body, it can be relaxed and ready for each
+          shot or it can be fearful and worried about the future and where the
+          ball is going and thus the body is tight or just simply out of rhythm
+          for the shot at hand.
+        </p>
+        <p class="text-lg leading-relaxed font-300 mt-4">
+          An expectation is a belief centered on the future. High performance
+          athletes can tend to be perfectionists that focus on results and hold
+          very high expectations for themselves. The problem with this is that
+          their standards are so high that if they make a mistake they criticize
+          themselves ruthlessly. There tends to be a focus on the negative, “I
+          stink”, instead of “ I can do this”. Unfortunately things tend to go
+          down hill from this point.
+        </p>
+        <p class="text-lg leading-relaxed font-300 mt-4">
+          Do you get easily frustrated when you make a mistake? Do you expect
+          more out of yourself than what you are getting? Are your standards set
+          very high thinking that you do not want to live in a world of
+          mediocrity? Are you overly critical of yourself and your performance?
+          If you believe this is the way to get your best performance you may
+          want to rethink your approach.
+        </p>
+        <h4
+          class="text-sm font-600 text-primary-red-500 uppercase leading-tight tracking-wide mt-8"
+        >
+          You can’t predict the future
+        </h4>
+        <p class="text-lg leading-relaxed font-300 mt-4">
+          Every shot is a surprise! Really, it is. You cannot know the future
+          and a golf stroke has so many moving parts and a thought process that
+          can change your golf stroke in an instant that the future for your
+          ball is a surprise. Many times it can be a pleasant surprise but
+          before you make your stroke, you do not know the outcome. High
+          standards while playing can create high criticism if the shot does not
+          go as planned.
+        </p>
+        <p class="text-lg leading-relaxed font-300 mt-4">
+          Expectations are an extra burden you put upon yourself to meet a
+          predetermined standard that you deem as “good”. You either reach your
+          standard (a good day) or you don’t (a bad day).
+        </p>
+        <h4
+          class="text-sm font-600 text-primary-red-500 uppercase leading-tight tracking-wide mt-8"
+        >
+          Start at Point A
+        </h4>
+        <p class="text-lg leading-relaxed font-300 mt-4">
+          Point A is playing knowing that each shot is a surprise and each shot
+          will set you up for a new situation that requires your attention and
+          100% energy to do your best. You do not try to predict the outcome,
+          you play only one stroke at a time giving it your best effort and
+          accept what happens, both good and bad, and move on to the next shot
+          to give 100%.
+        </p>
+        <h4
+          class="text-sm font-600 text-primary-red-500 uppercase leading-tight tracking-wide mt-8"
+        >
+          A real life scenario
+        </h4>
+        <p class="text-lg leading-relaxed font-300 mt-4">
+          A high school boy, Jacob, was playing with another boy, Tony, who was
+          ranting and raving after each shot. Tony was always upset after each
+          shot. It just wasn’t good enough, the ball faded instead of turning
+          left like he saw in his mind. The putt stopped on the front edge of
+          the hole instead of falling in, the chip was 6 feet short instead of
+          nestling right up to the hole, all to Tony’s chagrin and now Tony was
+          complaining and telling himself how bad he was. Jacob said to Tony on
+          about the 3rd hole, “I used to do what you are doing and then I
+          realized it really wasn’t helping and I trained myself to accept the
+          outcome and move on to the next shot which I could then be more
+          prepared for. It wasn’t that I didn’t try; I just stopped wasting my
+          energy on what I couldn’t control. Now when I get off to a bad start I
+          just keep trying to figure out how to stay calm and allow my game to
+          come around.”
+        </p>
+        <p class="text-lg leading-relaxed font-300 mt-4">
+          A few months later, Jacob was playing with some college players and a
+          professional and he found himself 2 over par after 4 holes. Jacob
+          really wanted to play well with this better competition and he was
+          excited to play with better players. He just kept plugging along and a
+          putt dropped for birdie, then out of the blue he hit a great 3 wood
+          onto the green on a par 5 and made the putt for an eagle, just when he
+          least expected it he was back in the game and finished the round 4
+          under par and very much in control of his game. The others did not
+          fair so well, criticizing themselves after a poor shot, questioning
+          their strokes and feeling lost and disappointed by the end of the
+          round. When asked by the professional if it was difficult to play from
+          Point A, Jacob replied, “At first it was but I’ve been doing it for so
+          long, there is no other way to play.”
+        </p>
+        <p class="text-lg leading-relaxed font-300 mt-4">
+          Every shot is a surprise and if you are looking for the good in each
+          shot you can find it and if you are looking for the bad in each shot
+          you are sure to find that also. You will create a positive or negative
+          energy about your game just from your perspective of your golf shot.
+          When you decide to play from Point A to Point A allowing yourself to
+          be 100% present, positive and prepared you can make any game a
+          productive and beneficial experience.
+        </p>
+      </div>
+      <div class="mt-16 w-full lg:w-1/4 lg:mt-0">
+        <div class="bg-white shadow p-4">
+          <h3 class="text-lg text-primary-red-600 font-400">
+            More Point A Golf Guides
+          </h3>
+          <ul class="list-none text-gray-600 mt-4">
+            <li class="mt-4 first:mt-0 leading-none flex">
+              <div class="h-4 w-1 bg-primary-red-500"></div>
+              <a
+                href="../guides/forward-and-away-thinking"
+                class="hover:underline pl-2"
+              >
+                Forward And Away Thinking
+              </a>
+            </li>
+            <li class="mt-4 first:mt-0 leading-none flex">
+              <div class="h-4 w-1 bg-primary-red-500"></div>
+              <a
+                href="../guides/how-to-apply-backward-thinking"
+                class="hover:underline pl-2"
+              >
+                How To Apply Backwards Thinking
+              </a>
+            </li>
+            <li class="mt-4 first:mt-0 leading-none flex">
+              <div class="h-4 w-1 bg-primary-red-500"></div>
+              <a
+                href="../guides/meditation-and-golf"
+                class="hover:underline pl-2"
+              >
+                Meditation And Golf
+              </a>
+            </li>
+            <li class="mt-4 first:mt-0 leading-none flex">
+              <div class="h-4 w-1 bg-primary-red-500"></div>
+              <a
+                href="../guides/multitasking-and-the-golf-swing"
+                class="hover:underline pl-2"
+              >
+                Multitasking And The Golf Swing
+              </a>
+            </li>
+            <li class="mt-4 first:mt-0 leading-none flex">
+              <div class="h-4 w-1 bg-primary-red-500"></div>
+              <a
+                href="../guides/preparing-when-you-dont-have-time"
+                class="hover:underline pl-2"
+              >
+                Preparing When You Don't Have Time
+              </a>
+            </li>
+            <li class="mt-4 first:mt-0 leading-none flex">
+              <div class="h-4 w-1 bg-primary-red-500"></div>
+              <a
+                href="../guides/the-art-of-loving-yourself"
+                class="hover:underline pl-2"
+              >
+                The Art of Loving Yourself
+              </a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </section>
+
+    <section class="mt-16">
+      <div class="bg-primary-red-600 py-16">
+        <h2 class="text-white text-3xl font-200 text-center leading-tight">
+          Learn How to<br />
+          <span class="font-600">Play Point A Golf</span>
+        </h2>
+        <div class="flex flex-wrap justify-center mt-8">
+          <div class="w-auto px-2">
+            <button
+              class="bg-white border-2 border-white rounded-xl shadow-lg text-primary-red-600 px-4 py-2 hover:bg-primary-red-700 hover:border-primary-red-700 hover:text-white focus:outline-none font-500"
+            >
+              <a href="/lessons">Request A Lesson</a>
+            </button>
+          </div>
+          <div class="w-auto px-2">
+            <button
+              class="bg-transparent border-2 border-white rounded-xl shadow-lg text-white px-4 py-2 hover:bg-primary-red-700 hover:border-primary-red-700 hover:text-white focus:outline-none font-500"
+            >
+              <a href="/point-a-golf-book">Point A Golf Book</a>
+            </button>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <footer>
+      <div
+        class="py-16"
+        style="background: linear-gradient(to bottom, #1a202f 11%,#0e1019 99%);"
+      >
+        <div class="flex flex-wrap w-full max-w-screen-md mx-auto">
+          <div class="p-4 w-full sm:w-1/3 flex items-center justify-center">
+            <img
+              src="../assets/img/logos/susie-meyers-golf-logo.png"
+              class="w-24 h-24"
+            />
+          </div>
+          <div
+            class="p-4 w-full sm:w-1/3 sm:order-3 flex items-center justify-center"
+          >
+            <img
+              src="../assets/img/logos/pga-of-america-logo.png"
+              class="w-24 h-24"
+            />
+          </div>
+          <div
+            class="p-4 w-full sm:w-1/3 sm:order-2 flex items-center justify-center"
+          >
+            <img src="../assets/img/logos/golf-top-100-logo.png" class="w-24" />
+          </div>
+        </div>
+        <div class="flex flex-wrap items-center justify-center my-8">
+          <div class="p-4 w-full max-w-screen-md mx-auto">
+            <h4 class="text-white text-2xl uppercase text-center font-600">
+              Play Point A Golf
+            </h4>
+            <div class="w-full text-center text-white mt-8 flex flex-wrap">
+              <div class="p-2 w-full md:w-1/3 flex justify-center">
+                <a href="" class="w-auto">
+                  <div
+                    class="font-500 hover:bg-white hover:text-gray-700 px-4 py-2 border border-white rounded-full"
+                  >
+                    Request a Golf Lesson
+                  </div>
+                </a>
+              </div>
+              <div class="p-2 w-full md:w-1/3 flex justify-center">
+                <a href="/lessons">
+                  <div
+                    class="font-500 hover:bg-white hover:text-gray-700 px-4 py-2 border border-white rounded-full"
+                  >
+                    Point A Golf Book
+                  </div>
+                </a>
+              </div>
+              <div class="p-2 w-full md:w-1/3 flex justify-center">
+                <a href="/point-a-golf-book">
+                  <div
+                    class="font-500 hover:bg-white hover:text-gray-700 px-4 py-2 border border-white rounded-full"
+                  >
+                    Point A Golf Philosophy
+                  </div>
+                </a>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="flex flex-wrap">
+          <div class="text-white text-center font-600 text-lg w-full">
+            &copy; Susie Meyers Golf <span id="year"></span>
+          </div>
+          <div class="mt-4 flex justify-center w-full">
+            <div class="p-4">
+              <a href="">
+                <img src="../assets/icons/facebook.png" class="h-10 w-10" />
+              </a>
+            </div>
+            <div class="p-4">
+              <a
+                href="https://www.instagram.com/susiemeyersgolf/"
+                class="cursor-pointer"
+              >
+                <img src="../assets/icons/instagram.png" class="h-10 w-10" />
+              </a>
+            </div>
+            <div class="p-4">
+              <a href="https://www.linkedin.com/in/susie-meyers-05942944">
+                <img src="../assets/icons/linkedin.png" class="h-10 w-10" />
+              </a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </footer>
+  </body>
+  <script>
+    document.getElementById("year").innerHTML = new Date().getFullYear();
+  </script>
 </html>
