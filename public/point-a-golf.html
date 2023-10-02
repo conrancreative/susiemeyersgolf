@@ -13,21 +13,13 @@
 
   <body>
     <script src="assets/js/scripts.js"></script>
-    <header class="w-full flex flex-col min-h-screen">
+    <header class="w-full flex flex-col">
       <nav class="z-50 relative">
         <div class="h-16 bg-white flex items-center px-4 shadow">
           <div class="w-1/3">
-            <button
-              onclick="navToggle()"
-              class="uppercase font-600 text-primary-red-500 leading-none focus:outline-none"
-            >
+            <button onclick="navToggle()" class="uppercase font-600 text-primary-red-500 leading-none focus:outline-none">
               <div class="text-primary-red-500 font-600 pr-2 flex items-center">
-                <svg
-                  xmlns="http://www.w3.org/2000/svg"
-                  width="20"
-                  height="12"
-                  class="fill-current mr-2"
-                >
+                <svg xmlns="http://www.w3.org/2000/svg" width="20" height="12" class="fill-current mr-2">
                   <g fill="none" stroke="#9d201a" stroke-width="2">
                     <path data-name="Line 1" d="M0 1h20" />
                     <path data-name="Line 2" d="M0 6h20" />
@@ -40,45 +32,20 @@
           </div>
           <div class="w-1/3 flex justify-center">
             <a href="/">
-              <img
-                src="assets/img/logos/susie-meyers-golf-logo.png"
-                class="w-24 h-24 mt-16"
-              />
+              <img src="assets/img/logos/susie-meyers-golf-logo.png" class="w-24 h-24 mt-16" />
             </a>
           </div>
           <div class="w-1/3 flex justify-end">
-            <a
-              href="/lessons"
-              class="uppercase font-500 text-primary-red-500 font-600 leading-none"
-            >
-              LESSONS
-            </a>
+            <a href="/lessons" class="uppercase font-500 text-primary-red-500 font-600 leading-none"> LESSONS </a>
           </div>
         </div>
-        <div
-          class="w-full absolute h-screen top-0 left-0 z-0 bg-white hidden"
-          id="nav"
-        >
-          <button
-            onclick="navToggle()"
-            class="h-16 px-4 uppercase font-600 text-primary-red-500 leading-none focus:outline-none"
-          >
+        <div class="w-full absolute h-screen top-0 left-0 z-0 bg-white hidden" id="nav">
+          <button onclick="navToggle()" class="h-16 px-4 uppercase font-600 text-primary-red-500 leading-none focus:outline-none">
             <div class="text-primary-red-500 font-600 pr-2 flex items-center">
-              <svg
-                xmlns="http://www.w3.org/2000/svg"
-                width="20"
-                height="12"
-                class="fill-current"
-              >
+              <svg xmlns="http://www.w3.org/2000/svg" width="20" height="12" class="fill-current">
                 <g>
-                  <path
-                    data-name="Rectangle 28"
-                    d="M5.414 0l10.607 10.607-1.415 1.414L4 1.414z"
-                  />
-                  <path
-                    data-name="Rectangle 29"
-                    d="M4 10.607L14.607 0l1.414 1.415L5.414 12.02z"
-                  />
+                  <path data-name="Rectangle 28" d="M5.414 0l10.607 10.607-1.415 1.414L4 1.414z" />
+                  <path data-name="Rectangle 29" d="M4 10.607L14.607 0l1.414 1.415L5.414 12.02z" />
                 </g>
               </svg>
               <span class="pl-2">CLOSE</span>
@@ -102,9 +69,9 @@
                 >Articles & Media</a
               >
               <a
-                href="/contact"
+                href="/talks"
                 class="w-full pt-6 pb-1 flex text-xl md:text-2xl lg:text-3xl font-300 tracking-wide leading-none border-b border-gray-200 hover:font-500 hover:text-primary-red-500"
-                >Contact</a
+                >Talks &amp; Seminars</a
               >
               <a
                 href="/point-a-golf-book"
@@ -112,11 +79,9 @@
                 >Golf From Point A Book</a
               >
             </div>
-            <div
-              class="w-full md:w-1/2 mt-8 hidden md:flex flex-wrap md:justify-center"
-            >
-              <div class="px-4 w-48 md:w-56 lg:w-64 flex">
-                <img src="assets/img/book/book-nav.png" />
+            <div class="w-full md:w-1/2 mt-8 hidden md:flex flex-wrap md:justify-center">
+              <div class="px-4 flex">
+                <img src="assets/img/book/book-nav.png" class="lg:h-120" />
               </div>
               <div class="w-auto px-4 mt-8 w-full md:text-center">
                 <a
@@ -130,96 +95,65 @@
           </div>
         </div>
       </nav>
-      <div
-        class="bg-cover bg-center flex-grow"
-        style="background-image: url('assets/img/susie-point-a-golf.jpg');"
-      ></div>
+      <!--<div class="bg-cover bg-center flex-grow" style="background-image: url('assets/img/susie-point-a-golf.jpg')"></div>-->
       <div class="bg-primary-red-500 py-8">
-        <h1
-          class="text-white text-3xl font-200 leading-tight w-full max-w-screen-xl mx-auto px-4"
-        >
-          Play Golf From <br />
-          <span class="font-600">Point A</span>
-        </h1>
+        <h1 class="text-white text-3xl font-600 leading-tight w-full max-w-screen-xl mx-auto px-4 mt-16 mb-8 text-center">Play Golf From Point A</h1>
       </div>
     </header>
     <section class="mt-16 max-w-screen-xl mx-auto">
       <div class="bg-white px-4">
-        <h2 class="text-primary-red-500 text-2xl font-200 leading-tight">
-          The Point A Golf Philosophy
-        </h2>
+        <h2 class="text-primary-red-500 text-2xl font-200 leading-tight">The Point A Golf Philosophy</h2>
         <div class="flex flex-wrap">
-          <h3 class="text-lg font-400 pt-4 w-full lg:w-1/2 lg:pr-8">
-            Point A is a way of thinking. An approach to the game of golf that
-            continually rids a player of unneeded baggage and thoughts that
-            inhibit their abilities.
-          </h3>
-          <div class="w-full lg:w-1/2 lg:pl-4">
+          <div class="w-full lg:w-1/2 lg:pr-8">
+            <h3 class="text-lg font-400 pt-4">
+              After decades of playing and teaching golf, Susie coined the GOLF from POINT A philosophy. Her teaching method was so successful – she wrote a
+              book. While every golfer at every level needs good equipment and good golf technique, it is a known fact, those that can manage their emotions
+              will enjoy the game more, play at their best and become a winner.
+            </h3>
             <p class="text-gray-900 font-200 pt-4">
-              Point A thinking helps provide support and encouragement to you so
-              you can get the best out of yourself. Point A thinking is holistic
-              in the sense that it is about the whole “thing”: the body, the
-              mind, the golf course, and the equipment. The way you think about
-              each of these things can either benefit you or impede your
-              progress in the Game.
+              Point A thinking helps provide support and encouragement to you so you can get the best out of yourself. Point A thinking is holistic in the sense
+              that it is about the whole “thing”: the body, the mind, the golf course, and the equipment. The way you think about each of these things can
+              either benefit you or impede your progress in the Game.
             </p>
             <p class="text-gray-900 font-200 pt-4">
-              Point A Golf is not just the mental game; it is the whole game.
-              Everything you do begins with a thought. Every stroke you make in
-              golf comes begins with what you are thinking. Point A thinking is
-              a guide to help you explore your perceptions of the greatest game
-              ever played.
+              Point A Golf is not just the mental game; it is the whole game. Everything you do begins with a thought. Every stroke you make in golf comes
+              begins with what you are thinking. Point A thinking is a guide to help you explore your perceptions of the greatest game ever played.
             </p>
+          </div>
+          <div class="mt-8 lg:mt-0 w-full lg:w-1/2">
+            <img src="assets/img/susie-swing-face-on.jpg" />
           </div>
         </div>
         <div class="pt-16 -m-4 flex flex-wrap">
           <div class="p-4 w-full lg:w-1/2">
-            <h4 class="text-lg font-400">
-              Think Simple, Think Positive.
-            </h4>
+            <h4 class="text-lg font-400">Think Simple, Think Positive.</h4>
             <p class="text-gray-900 font-200 pt-2">
-              Everything you think sends a message to your body. Create positive
-              thoughts and you have a chance to make a positive golf stroke.
-              Eliminate doubt, fear and confusion and the best of your movements
-              will emerge.
+              Everything you think sends a message to your body. Create positive thoughts and you have a chance to make a positive golf stroke. Eliminate doubt,
+              fear and confusion and the best of your movements will emerge.
             </p>
           </div>
           <div class="p-4 w-full lg:w-1/2">
-            <h4 class="text-lg font-400">
-              Trust Your Mind.
-            </h4>
+            <h4 class="text-lg font-400">Trust Your Mind.</h4>
             <p class="text-gray-900 font-200 pt-2">
-              A golfer’s mind when performing a golf stroke is best done in a
-              quiet and positive manner. Too much information or trying to
-              duplicate numbers on a machine trains the mind to be active/ busy
-              rather than in a state of play… a state of “nothingness”. Trust
-              the picture of what you want o see in your head and move with
-              commitment and freedom.
+              A golfer’s mind when performing a golf stroke is best done in a quiet and positive manner. Too much information or trying to duplicate numbers on
+              a machine trains the mind to be active/ busy rather than in a state of play… a state of “nothingness”. Trust the picture of what you want o see in
+              your head and move with commitment and freedom.
             </p>
           </div>
           <div class="p-4 w-full lg:w-1/2">
-            <h4 class="text-lg font-400">
-              Move Without Thinking.
-            </h4>
+            <h4 class="text-lg font-400">Move Without Thinking.</h4>
             <p class="text-gray-900 font-200 pt-2">
-              Learning a golf stroke is often more about getting rid of unneeded
-              movements to make the stroke more efficient and powerful. Much
-              like when we walk – we don’t focus on where our knees are or when
-              your heel touches the ground. Simplifying motion and thought is
-              much more productive than building a stroke step-by-step,
-              position-by-position.
+              Learning a golf stroke is often more about getting rid of unneeded movements to make the stroke more efficient and powerful. Much like when we
+              walk – we don’t focus on where our knees are or when your heel touches the ground. Simplifying motion and thought is much more productive than
+              building a stroke step-by-step, position-by-position.
             </p>
           </div>
           <div class="p-4 w-full lg:w-1/2">
-            <h4 class="text-lg font-400">
-              Be Creative and Reactive.
-            </h4>
+            <h4 class="text-lg font-400">Be Creative and Reactive.</h4>
             <p class="text-gray-900 font-200 pt-2">
-              These two words are the same by just switching the C and R around.
-              Be creative in your game. Be reactive in your game. React to what
-              the golf course is asking for. React to the picture in your mind
-              and simply move. Give the shot just enough thought to create the
-              picture then be quiet and react to it!
+              These two words are the same by just switching the C and R around. Be creative in your game. Be reactive in your game. React to what the golf
+              course is asking for. React to the picture in your mind and simply move. Give the shot just enough thought to create the picture then be quiet and
+              react to it!
             </p>
           </div>
         </div>
@@ -228,203 +162,121 @@
 
     <section class="mt-16 lg:mt-24">
       <div class="bg-gray-200 shadow-lg py-8 pb-40">
-        <h2
-          class="text-primary-red-500 text-2xl font-200 leading-tight pb-4 max-w-screen-xl mx-auto px-4"
-        >
-          Point A Golf Tips and Guides
-        </h2>
+        <h2 class="text-primary-red-500 text-2xl font-200 leading-tight pb-4 max-w-screen-xl mx-auto px-4">Point A Golf Tips and Guides</h2>
       </div>
       <div class="-mt-40 w-full max-w-screen-xl mx-auto">
         <div class="flex flex-wrap">
-          <a
-            href="/guides/every-shot-is-a-surprise"
-            class="p-4 w-full sm:w-1/2 lg:w-1/3 flex"
-          >
+          <a href="/guides/every-shot-is-a-surprise" class="p-4 w-full sm:w-1/2 lg:w-1/3 flex">
             <div class="w-full flex">
               <div class="bg-white shadow-lg w-full">
-                <div
-                  class="relative w-full bg-green-500"
-                  style="padding-bottom:60%;"
-                >
-                  <img
-                    src="/assets/img/guides/blog-image_point-a-golf.jpg"
-                    class="object-cover absolute h-full w-full"
-                  />
+                <div class="relative w-full bg-green-500" style="padding-bottom: 60%">
+                  <img src="/assets/img/guides/blog-image_point-a-golf.jpg" class="object-cover absolute h-full w-full" />
                 </div>
                 <div class="p-4">
                   <h4 class="font-400 text-lg">Every Shot Is A Surprise</h4>
                   <p class="font-300 text-gray-600 leading-tight pt-2">
-                    Playing golf is best played one stroke at a time, not
-                    thinking about your future shots. Thinking ahead changes the
-                    way you think about right now.
+                    Playing golf is best played one stroke at a time, not thinking about your future shots. Thinking ahead changes the way you think about right
+                    now.
                   </p>
                 </div>
               </div>
             </div>
           </a>
 
-          <a
-            href="guides/forward-and-away-thinking"
-            class="p-4 w-full sm:w-1/2 lg:w-1/3 flex"
-          >
+          <a href="guides/forward-and-away-thinking" class="p-4 w-full sm:w-1/2 lg:w-1/3 flex">
             <div class="w-full flex">
               <div class="bg-white shadow-lg w-full">
-                <div
-                  class="relative w-full bg-green-500"
-                  style="padding-bottom:60%;"
-                >
-                  <img
-                    src="/assets/img/guides/blog-control-attitude.jpg"
-                    class="object-cover absolute h-full w-full"
-                  />
+                <div class="relative w-full bg-green-500" style="padding-bottom: 60%">
+                  <img src="/assets/img/guides/blog-control-attitude.jpg" class="object-cover absolute h-full w-full" />
                 </div>
                 <div class="p-4">
                   <h4 class="font-400 text-lg">Forward And Away Thinking</h4>
                   <p class="font-300 text-gray-600 leading-tight pt-2">
-                    Your state of mind will be a huge determining factor of how
-                    you will play your golf game day to day. Learning just a bit
-                    about how the brain works may help you manage the way you
-                    think.
+                    Your state of mind will be a huge determining factor of how you will play your golf game day to day. Learning just a bit about how the brain
+                    works may help you manage the way you think.
                   </p>
                 </div>
               </div>
             </div>
           </a>
 
-          <a
-            href="guides/how-to-apply-backward-thinking"
-            class="p-4 w-full sm:w-1/2 lg:w-1/3 flex"
-          >
+          <a href="guides/how-to-apply-backward-thinking" class="p-4 w-full sm:w-1/2 lg:w-1/3 flex">
             <div class="w-full flex">
               <div class="bg-white shadow-lg w-full">
-                <div
-                  class="relative w-full bg-green-500"
-                  style="padding-bottom:60%;"
-                >
-                  <img
-                    src="assets/img/guides/blog-backwards-thinking.jpg"
-                    class="object-cover absolute h-full w-full"
-                  />
+                <div class="relative w-full bg-green-500" style="padding-bottom: 60%">
+                  <img src="assets/img/guides/blog-backwards-thinking.jpg" class="object-cover absolute h-full w-full" />
                 </div>
                 <div class="p-4">
-                  <h4 class="font-400 text-lg">
-                    How To Apply Backward Thinking
-                  </h4>
+                  <h4 class="font-400 text-lg">How To Apply Backward Thinking</h4>
                   <p class="font-300 text-gray-600 leading-tight pt-2">
-                    Begin by looking at the target. Know what your intention is.
-                    Then cut the emotional attachment to the result.
+                    Begin by looking at the target. Know what your intention is. Then cut the emotional attachment to the result.
                   </p>
                 </div>
               </div>
             </div>
           </a>
 
-          <a
-            href="guides/meditation-and-golf"
-            class="p-4 w-full sm:w-1/2 lg:w-1/3 flex"
-          >
+          <a href="guides/meditation-and-golf" class="p-4 w-full sm:w-1/2 lg:w-1/3 flex">
             <div class="w-full flex">
               <div class="bg-white shadow-lg w-full">
-                <div
-                  class="relative w-full bg-green-500"
-                  style="padding-bottom:60%;"
-                >
-                  <img
-                    src="assets/img/guides/blog_meditation-and-golf.jpg"
-                    class="object-cover absolute h-full w-full"
-                  />
+                <div class="relative w-full bg-green-500" style="padding-bottom: 60%">
+                  <img src="assets/img/guides/blog_meditation-and-golf.jpg" class="object-cover absolute h-full w-full" />
                 </div>
                 <div class="p-4">
                   <h4 class="font-400 text-lg">Meditation And Golf</h4>
                   <p class="font-300 text-gray-600 leading-tight pt-2">
-                    Mindful meditation is at its core the practice of being
-                    aware of the present moment, basically being at Point A.
+                    Mindful meditation is at its core the practice of being aware of the present moment, basically being at Point A.
                   </p>
                 </div>
               </div>
             </div>
           </a>
 
-          <a
-            href="guides/multitasking-and-the-golf-swing"
-            class="p-4 w-full sm:w-1/2 lg:w-1/3 flex"
-          >
+          <a href="guides/multitasking-and-the-golf-swing" class="p-4 w-full sm:w-1/2 lg:w-1/3 flex">
             <div class="w-full flex">
               <div class="bg-white shadow-lg w-full">
-                <div
-                  class="relative w-full bg-green-500"
-                  style="padding-bottom:60%;"
-                >
-                  <img
-                    src="assets/img/guides/blog-multitasking.jpg"
-                    class="object-cover absolute h-full w-full"
-                  />
+                <div class="relative w-full bg-green-500" style="padding-bottom: 60%">
+                  <img src="assets/img/guides/blog-multitasking.jpg" class="object-cover absolute h-full w-full" />
                 </div>
                 <div class="p-4">
-                  <h4 class="font-400 text-lg">
-                    Multi Tasking And The Golf Swing
-                  </h4>
+                  <h4 class="font-400 text-lg">Multi Tasking And The Golf Swing</h4>
                   <p class="font-300 text-gray-600 leading-tight pt-2">
-                    Are you looking to make your golf game better? Do you know
-                    where to start or what to do or do you get confused with so
-                    much information available today in golf’s culture?
+                    Are you looking to make your golf game better? Do you know where to start or what to do or do you get confused with so much information
+                    available today in golf’s culture?
                   </p>
                 </div>
               </div>
             </div>
           </a>
 
-          <a
-            href="guides/preparing-when-you-dont-have-time"
-            class="p-4 w-full sm:w-1/2 lg:w-1/3 flex"
-          >
+          <a href="guides/preparing-when-you-dont-have-time" class="p-4 w-full sm:w-1/2 lg:w-1/3 flex">
             <div class="w-full flex">
               <div class="bg-white shadow-lg w-full">
-                <div
-                  class="relative w-full bg-green-500"
-                  style="padding-bottom:60%;"
-                >
-                  <img
-                    src="assets/img/guides/blog-out-of-time.jpg"
-                    class="object-cover absolute h-full w-full"
-                  />
+                <div class="relative w-full bg-green-500" style="padding-bottom: 60%">
+                  <img src="assets/img/guides/blog-out-of-time.jpg" class="object-cover absolute h-full w-full" />
                 </div>
                 <div class="p-4">
-                  <h4 class="font-400 text-lg">
-                    Preparing When You Don't Have Time
-                  </h4>
+                  <h4 class="font-400 text-lg">Preparing When You Don't Have Time</h4>
                   <p class="font-300 text-gray-600 leading-tight pt-2">
-                    Getting ready to play golf next week? If you don’t play a
-                    lot or have time to get out and practice beforehand there
-                    are some things to do to get yourself prepared before the
-                    big day and it really doesn’t take a lot of effort!
+                    Getting ready to play golf next week? If you don’t play a lot or have time to get out and practice beforehand there are some things to do to
+                    get yourself prepared before the big day and it really doesn’t take a lot of effort!
                   </p>
                 </div>
               </div>
             </div>
           </a>
 
-          <a
-            href="guides/the-art-of-loving-yourself"
-            class="p-4 w-full sm:w-1/2 lg:w-1/3 flex"
-          >
+          <a href="guides/the-art-of-loving-yourself" class="p-4 w-full sm:w-1/2 lg:w-1/3 flex">
             <div class="w-full flex">
               <div class="bg-white shadow-lg w-full">
-                <div
-                  class="relative w-full bg-green-500"
-                  style="padding-bottom:60%;"
-                >
-                  <img
-                    src="assets/img/guides/blog_love-yourself.jpg"
-                    class="object-cover absolute h-full w-full"
-                  />
+                <div class="relative w-full bg-green-500" style="padding-bottom: 60%">
+                  <img src="assets/img/guides/blog_love-yourself.jpg" class="object-cover absolute h-full w-full" />
                 </div>
                 <div class="p-4">
                   <h4 class="font-400 text-lg">The Art Of Loving Yourself</h4>
                   <p class="font-300 text-gray-600 leading-tight pt-2">
-                    Are you looking to make your golf game better? Do you know
-                    where to start or what to do or do you get confused with so
-                    much information available today in golf’s culture?
+                    Are you looking to make your golf game better? Do you know where to start or what to do or do you get confused with so much information
+                    available today in golf’s culture?
                   </p>
                 </div>
               </div>
@@ -460,71 +312,42 @@
     </section>
 
     <footer>
-      <div
-        class="py-16"
-        style="background: linear-gradient(to bottom, #1a202f 11%,#0e1019 99%);"
-      >
+      <div class="py-16" style="background: linear-gradient(to bottom, #1a202f 11%, #0e1019 99%)">
         <div class="flex flex-wrap w-full max-w-screen-md mx-auto">
           <div class="p-4 w-full sm:w-1/3 flex items-center justify-center">
-            <img
-              src="assets/img/logos/susie-meyers-golf-logo.png"
-              class="w-24 h-24"
-            />
+            <img src="assets/img/logos/susie-meyers-golf-logo.png" class="w-24 h-24" />
           </div>
-          <div
-            class="p-4 w-full sm:w-1/3 sm:order-3 flex items-center justify-center"
-          >
-            <img
-              src="assets/img/logos/pga-of-america-logo.png"
-              class="w-24 h-24"
-            />
+          <div class="p-4 w-full sm:w-1/3 sm:order-3 flex items-center justify-center">
+            <img src="assets/img/logos/pga-of-america-logo.png" class="w-24 h-24" />
           </div>
-          <div
-            class="p-4 w-full sm:w-1/3 sm:order-2 flex items-center justify-center"
-          >
+          <div class="p-4 w-full sm:w-1/3 sm:order-2 flex items-center justify-center">
             <img src="assets/img/logos/golf-top-100-logo.png" class="w-24" />
           </div>
         </div>
         <div class="flex flex-wrap items-center justify-center my-8">
           <div class="p-4 w-full max-w-screen-md mx-auto">
-            <h4 class="text-white text-2xl uppercase text-center font-600">
-              Play Point A Golf
-            </h4>
+            <h4 class="text-white text-2xl uppercase text-center font-600">Play Point A Golf</h4>
             <div class="w-full text-center text-white mt-8 flex flex-wrap">
               <div class="p-2 w-full md:w-1/3 flex justify-center">
                 <a href="/lessons" class="w-auto">
-                  <div
-                    class="font-500 hover:bg-white hover:text-gray-700 px-4 py-2 border border-white rounded-full"
-                  >
-                    Request a Golf Lesson
-                  </div>
+                  <div class="font-500 hover:bg-white hover:text-gray-700 px-4 py-2 border border-white rounded-full">Request a Golf Lesson</div>
                 </a>
               </div>
               <div class="p-2 w-full md:w-1/3 flex justify-center">
                 <a href="/point-a-golf-book">
-                  <div
-                    class="font-500 hover:bg-white hover:text-gray-700 px-4 py-2 border border-white rounded-full"
-                  >
-                    Point A Golf Book
-                  </div>
+                  <div class="font-500 hover:bg-white hover:text-gray-700 px-4 py-2 border border-white rounded-full">Point A Golf Book</div>
                 </a>
               </div>
               <div class="p-2 w-full md:w-1/3 flex justify-center">
                 <a href="/point-a-golf">
-                  <div
-                    class="font-500 hover:bg-white hover:text-gray-700 px-4 py-2 border border-white rounded-full"
-                  >
-                    Point A Golf Philosophy
-                  </div>
+                  <div class="font-500 hover:bg-white hover:text-gray-700 px-4 py-2 border border-white rounded-full">Point A Golf Philosophy</div>
                 </a>
               </div>
             </div>
           </div>
         </div>
         <div class="flex flex-wrap">
-          <div class="text-white text-center font-600 text-lg w-full">
-            &copy; Susie Meyers Golf <span id="year"></span>
-          </div>
+          <div class="text-white text-center font-600 text-lg w-full">&copy; Susie Meyers Golf <span id="year"></span></div>
           <div class="mt-4 flex justify-center w-full">
             <div class="p-4">
               <a href="">
@@ -532,10 +355,7 @@
               </a>
             </div>
             <div class="p-4">
-              <a
-                href="https://www.instagram.com/susiemeyersgolf/"
-                class="cursor-pointer"
-              >
+              <a href="https://www.instagram.com/susiemeyersgolf/" class="cursor-pointer">
                 <img src="assets/icons/instagram.png" class="h-10 w-10" />
               </a>
             </div>
